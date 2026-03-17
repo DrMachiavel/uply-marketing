@@ -43,20 +43,21 @@ uply-marketing/
 │   │   ├── page.tsx      # Homepage
 │   │   ├── features/
 │   │   ├── pricing/
-│   │   ├── about/
 │   │   ├── blog/
 │   │   │   ├── page.tsx          # Blog listing
 │   │   │   └── [slug]/page.tsx   # Individual post
-│   │   └── signup/
+│   │   ├── help/                 # Help center
+│   │   └── privacy/              # Privacy policy
 │   ├── components/
 │   │   ├── ui/           # Buttons, cards, badges
 │   │   ├── layout/       # Nav, Footer, Section wrappers
 │   │   └── sections/     # Hero, Features, Pricing, Testimonials
 │   ├── content/
-│   │   └── blog/         # MDX blog posts
+│   │   ├── blog/         # MDX blog posts
+│   │   └── help/         # MDX help articles (by category)
 │   └── lib/
 │       └── mdx.ts        # MDX utilities
-├── tailwind.config.ts    # Uply color palette + custom tokens
+├── app.css               # Tailwind v4 CSS config + Uply custom tokens
 ├── next.config.ts
 ├── package.json
 └── README.md
@@ -69,11 +70,13 @@ uply.com/
 ├── /              Homepage
 ├── /features      How it works + feature details
 ├── /pricing       Plans & comparison
-├── /about         Team + mission
 ├── /blog          Blog listing
 ├── /blog/[slug]   Individual blog posts (MDX)
-└── /signup        Signup flow (links to Slack install)
+├── /help          Help center
+└── /privacy       Privacy policy (ECOMMERCE RTM)
 ```
+
+Note: Signup page is external (existing Slack install flow). All "Get started" CTAs link to the external signup URL.
 
 ## Brand & Visual Design
 
@@ -100,8 +103,14 @@ Dark and light sections alternate to create contrast and breathing room:
 
 ### Typography
 
-- **Body:** Inter (clean, modern, excellent readability)
+- **Headings + Body:** Inter (clean, modern, excellent readability). Single font family — heavier weights (700, 800) for headings, regular (400) for body.
 - **Style:** Clean, generous whitespace, no clutter
+
+### Animations
+
+- Subtle fade-in on scroll for sections (CSS-only, no heavy libraries)
+- Hover effects on cards and CTAs (scale, border glow)
+- No complex animations — keep it fast and lightweight
 
 ### Tone
 
@@ -124,6 +133,122 @@ Dark and light sections alternate to create contrast and breathing room:
 10. **Footer** — Links, legal, social
 
 Social proof is woven throughout — every other section reinforces credibility.
+
+**Social proof content:** All logos, testimonials, stats, and case studies will use placeholder/mock content at launch. Real content will be swapped in as it becomes available. Placeholders should look realistic (fictional but believable company names, quotes, numbers).
+
+## Navigation & Footer
+
+### Navigation (sticky)
+- **Left:** Uply logo (green on dark)
+- **Center:** Features, Pricing, Blog
+- **Right:** "Get started free" CTA button (green)
+- **Mobile:** Hamburger menu → slide-out drawer with same links + CTA
+- **Behavior:** Sticky, dark background, subtle border on scroll
+
+### Footer
+- **Column 1:** Uply logo + one-line tagline
+- **Column 2 — Product:** Features, Pricing, Blog
+- **Column 3 — Support:** Help Center, Contact
+- **Column 4 — Legal:** Privacy Policy
+- **Bottom row:** Copyright + social icons (LinkedIn, Twitter/X)
+
+## Features Page (`/features`)
+
+### Layout
+1. **Hero** (dark) — "Everything your team needs to build better soft skills"
+2. **Feature blocks** (alternating light/dark) — Each feature gets a two-column block: text on one side, Slack mockup/illustration on the other. Alternate left/right.
+3. **Topics covered** (light green wash) — Grid of skill categories: Leadership, Collaboration, Communication, Feedback, Conflict Resolution, Time Management
+4. **CTA section** (dark) — "Start building better skills today"
+
+### Feature Blocks Content
+- **Daily micro-lessons** — 1-2 questions per day, delivered in Slack. Multiple choice + open-ended. Takes 2 minutes.
+- **Weekly leaderboard** — Scores aggregated weekly. Top performers highlighted. Friendly competition drives engagement.
+- **Skill topics** — Curated content across leadership, collaboration, feedback, and more. New topics added regularly.
+- **Team insights** — See participation rates and scores at a glance. Know which skills your team is developing.
+
+## Pricing Page (`/pricing`)
+
+### Layout
+1. **Header** (dark) — "Simple pricing. Start free."
+2. **Pricing cards** (white) — Two cards side by side: Free and Pro. Pro card is visually emphasized (green border, "Popular" badge, early access banner).
+3. **Feature comparison table** (white) — Rows for each feature, checkmarks for which tier includes it.
+4. **Early access banner** (green wash) — "Pro is free during early access. Normally $1/user/month."
+5. **FAQ accordion** (white) — Common questions.
+6. **CTA section** (dark)
+
+### FAQ Content
+- **How does billing work?** — Free during early access. When paid plans launch, you'll get 30 days notice.
+- **Can I cancel anytime?** — Yes, cancel anytime. No contracts.
+- **What Slack permissions does Uply need?** — Uply only posts to channels you choose. It cannot read your messages.
+- **Is my data secure?** — Yes. We don't store message content. Only question responses are saved.
+- **How many topics are available?** — Free includes 1 topic. Pro includes all current and future topics.
+
+## Help Center (`/help`)
+
+### Layout
+1. **Header** (dark) — "How can we help?" + search bar (filters articles client-side)
+2. **Category grid** (white) — Cards for each help category:
+   - **Getting Started** — Installing Uply in Slack, inviting your team, choosing topics
+   - **Daily Lessons** — How questions work, answering, skipping, changing topics
+   - **Scores & Leaderboard** — How scoring works, weekly rankings, what counts
+   - **Account & Billing** — Managing your plan, upgrading, cancellation
+   - **Privacy & Security** — Data handling, Slack permissions, GDPR
+3. **Contact section** (light green wash) — "Can't find what you need? Email us at support@uply.com"
+
+### Help Articles
+Help articles are MDX files in `src/content/help/`, organized by category folders. Same rendering approach as blog posts but with a simpler layout (no author, no date, no related articles).
+
+```yaml
+---
+title: "How to install Uply in Slack"
+category: "getting-started"
+order: 1
+---
+```
+
+Initial launch: 3-5 articles per category covering the basics. Minimal but functional.
+
+## Privacy Policy (`/privacy`)
+
+### Layout
+1. **Header** (dark) — "Privacy Policy"
+2. **Content** (white, centered, max-width ~720px) — Full privacy policy text, clean typography
+3. **Footer note** — "Last updated: [date]" + "Questions? Contact privacy@uply.com"
+
+### Legal Entity
+- **Company:** ECOMMERCE RTM
+- **Product:** Uply
+- **Data processed:** Slack workspace info, user responses to daily questions, aggregated scores
+- **Data NOT processed:** Slack messages, files, or private conversations
+- **Third parties:** Slack API (required integration)
+- **Jurisdiction:** French law / EU (GDPR compliant)
+
+The full privacy policy text will be generated as a static page. It covers: data collection, data usage, data storage, third-party sharing, user rights (GDPR), cookies, data retention, and contact information.
+
+## Blog (`/blog`)
+
+### Blog Listing Page
+- **Header** (dark) — "Blog" + subtitle "Thoughts on leadership, soft skills, and building better teams"
+- **Post grid** (white) — 3-column card grid. Each card: thumbnail image (optional), title, excerpt (2 lines), date, reading time. No categories/tags at launch.
+- **Pagination** — Simple "Load more" button. No infinite scroll. 9 posts per page.
+
+### Blog Post Page (`/blog/[slug]`)
+- **Header** (dark) — Title, date, reading time, author
+- **Content** (white, centered, max-width ~720px) — MDX rendered content. Clean typography, generous line height.
+- **No sidebar.** No table of contents. Keep it simple.
+- **Bottom** — Author bio card + "Read more" with 2-3 related posts (by recency, no ML)
+- **CTA banner** (dark) — "Try Uply free" below the post
+
+### MDX Frontmatter
+```yaml
+---
+title: "Post title"
+date: "2026-03-17"
+excerpt: "Short description for cards and meta"
+author: "Author Name"
+image: "/images/blog/post-slug.jpg"  # optional
+---
+```
 
 ## Messaging
 
@@ -148,8 +273,9 @@ Social proof is woven throughout — every other section reinforces credibility.
 | Homepage | The problem (no time) → the solution (Slack) → how it works → proof → get started |
 | Features | Deep dive: daily questions, scoring, leaderboard, topics covered |
 | Pricing | Free tier + Pro (free during early access), feature comparison, FAQ |
-| About | Why we built this — founders who saw soft skills ignored at fast-growing startups |
 | Blog | Thought leadership: soft skills in the AI age, cost of bad managers, etc. |
+| Help Center | Self-service support — getting started, daily lessons, scoring, billing, privacy |
+| Privacy Policy | Full GDPR-compliant privacy policy for ECOMMERCE RTM |
 
 ## Pricing Structure
 
