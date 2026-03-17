@@ -1,6 +1,6 @@
 # Uply Marketing Website
 
-Marketing website for [Uply](https://uply.com) — soft skills training that lives in Slack.
+Marketing website for [Uply](https://uply.work) — soft skills training that lives in Slack.
 
 ## What is Uply?
 
@@ -13,6 +13,11 @@ Uply delivers daily micro-lessons to your team via Slack. 2 minutes a day, weekl
 - **Language:** TypeScript
 - **Blog:** MDX via next-mdx-remote
 - **Deployment:** Replit
+
+## Domain
+
+- **Domain:** uply.work
+- **Registrar:** GoDaddy (managed by Elliot)
 
 ## Getting Started
 
@@ -38,17 +43,19 @@ src/
 │   ├── page.tsx      # Homepage
 │   ├── features/     # Features page
 │   ├── pricing/      # Pricing page
-│   ├── about/        # About page
 │   ├── blog/         # Blog listing + [slug] posts
-│   └── signup/       # Signup flow
+│   ├── help/         # Help center
+│   └── privacy/      # Privacy policy
 ├── components/
 │   ├── ui/           # Buttons, cards, badges
 │   ├── layout/       # Nav, Footer, Section wrappers
 │   └── sections/     # Hero, Features, Pricing, Testimonials
 ├── content/
-│   └── blog/         # MDX blog posts
+│   ├── blog/         # MDX blog posts
+│   └── help/         # MDX help articles
 └── lib/
-    └── mdx.ts        # MDX utilities
+    ├── mdx.ts        # MDX utilities
+    └── help.ts       # Help center utilities
 ```
 
 ## Pages
@@ -58,10 +65,10 @@ src/
 | `/` | Homepage — hero, social proof, how it works, features, testimonials, CTA |
 | `/features` | Detailed feature breakdown and how it works |
 | `/pricing` | Free vs Pro comparison (Pro free during early access) |
-| `/about` | Team, mission, and story |
 | `/blog` | Blog listing |
 | `/blog/[slug]` | Individual blog post (MDX) |
-| `/signup` | Signup flow → Slack install |
+| `/help` | Help center with category grid |
+| `/privacy` | Privacy policy (ECOMMERCE RTM) |
 
 ## Brand
 
