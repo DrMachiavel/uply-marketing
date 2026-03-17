@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* Uply Colors */
+  --color-uply-dark: #0a0f0a;
+  --color-uply-dark-elevated: #1a1a1a;
+  --color-uply-green: #68ef3f;
+  --color-uply-green-light: #4ade80;
+  --color-uply-green-wash: #f0fdf4;
+  --color-uply-gray: #6b7280;
+  --color-uply-gray-light: #9ca3af;
+  --color-uply-white: #ffffff;
+
+  /* Font */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
