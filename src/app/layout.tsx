@@ -34,6 +34,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="bg-uply-dark font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Uply",
+              url: "https://uply.work",
+              description: "Soft skills training that lives in Slack",
+            }),
+          }}
+        />
         <Navbar />
         <main className="pt-[73px]">{children}</main>
         <Footer />
