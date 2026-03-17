@@ -66,7 +66,7 @@ uply-marketing/
 ## Site Map
 
 ```
-uply.com/
+uply.work/
 ├── /              Homepage
 ├── /features      How it works + feature details
 ├── /pricing       Plans & comparison
@@ -193,7 +193,7 @@ Social proof is woven throughout — every other section reinforces credibility.
    - **Scores & Leaderboard** — How scoring works, weekly rankings, what counts
    - **Account & Billing** — Managing your plan, upgrading, cancellation
    - **Privacy & Security** — Data handling, Slack permissions, GDPR
-3. **Contact section** (light green wash) — "Can't find what you need? Email us at support@uply.com"
+3. **Contact section** (light green wash) — "Can't find what you need? Email us at support@uply.work"
 
 ### Help Articles
 Help articles are MDX files in `src/content/help/`, organized by category folders. Same rendering approach as blog posts but with a simpler layout (no author, no date, no related articles).
@@ -213,7 +213,7 @@ Initial launch: 3-5 articles per category covering the basics. Minimal but funct
 ### Layout
 1. **Header** (dark) — "Privacy Policy"
 2. **Content** (white, centered, max-width ~720px) — Full privacy policy text, clean typography
-3. **Footer note** — "Last updated: [date]" + "Questions? Contact privacy@uply.com"
+3. **Footer note** — "Last updated: [date]" + "Questions? Contact privacy@uply.work"
 
 ### Legal Entity
 - **Company:** ECOMMERCE RTM
