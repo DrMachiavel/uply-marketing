@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { Badge } from "@/components/ui/badge";
 import { FadeIn } from "@/components/ui/fade-in";
@@ -6,7 +7,7 @@ import { PricingComparison } from "@/components/sections/pricing-comparison";
 import { FAQ } from "@/components/sections/faq";
 import { CTASection } from "@/components/sections/cta-section";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Pricing",
   description:
     "Simple, transparent pricing for Uply. Start free, upgrade when you're ready.",

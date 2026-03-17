@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { Badge } from "@/components/ui/badge";
 import { FadeIn } from "@/components/ui/fade-in";
@@ -6,7 +7,7 @@ import { FeatureBlock } from "@/components/sections/feature-block";
 import { TopicsGrid } from "@/components/sections/topics-grid";
 import { CTASection } from "@/components/sections/cta-section";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Features",
   description:
     "Daily micro-lessons, weekly leaderboards, and team insights — all in Slack.",
