@@ -7,22 +7,52 @@
   <circle cx="300" cy="100" r="300" fill="#68ef3f" opacity="0.04" filter="url(#blur1)"/>
   <circle cx="700" cy="350" r="250" fill="#68ef3f" opacity="0.03" filter="url(#blur1)"/>
 
-  <!-- Logo icon -->
-  <rect x="440" y="100" width="72" height="72" rx="14" fill="#68ef3f"/>
-  <path d="M458 125C458 125 458 155 476 155C494 155 494 125 494 125" stroke="#162415" stroke-width="6.5" stroke-linecap="round"/>
-  <circle cx="476" cy="117" r="4" fill="#162415"/>
+  <!-- Logo group — centered vertically, offset left -->
+  <g transform="translate(600, 108)">
+    <!-- Icon (the "u") — 72x72 -->
+    <rect width="72" height="72" rx="14" fill="#68ef3f"/>
+    <path d="M18 25C18 25 18 55 36 55C54 55 54 25 54 25" stroke="#162415" stroke-width="6.5" stroke-linecap="round"/>
+    <circle cx="36" cy="17" r="4" fill="#162415"/>
 
-  <!-- Wordmark "ply" — icon replaces the "u" -->
-  <text x="516" y="153" font-family="Inter, system-ui, sans-serif" font-size="42" font-weight="800" fill="#68ef3f" letter-spacing="-0.5">ply</text>
+    <!-- "ply" as bold geometric letter shapes in green, baseline-aligned with icon -->
+    <!-- p -->
+    <g fill="#68ef3f" transform="translate(76, 10)">
+      <!-- p stem -->
+      <rect x="0" y="8" width="9" height="52" rx="1"/>
+      <!-- p bowl -->
+      <rect x="0" y="8" width="30" height="9" rx="1"/>
+      <rect x="0" y="33" width="30" height="9" rx="1"/>
+      <rect x="26" y="8" width="9" height="34" rx="1"/>
+    </g>
+
+    <!-- l -->
+    <g fill="#68ef3f" transform="translate(116, 0)">
+      <rect x="0" y="0" width="9" height="60" rx="1"/>
+    </g>
+
+    <!-- y -->
+    <g fill="#68ef3f" transform="translate(134, 10)">
+      <!-- y left arm -->
+      <rect x="0" y="8" width="9" height="26" rx="1"/>
+      <!-- y right arm -->
+      <rect x="26" y="8" width="9" height="42" rx="1"/>
+      <!-- y bottom -->
+      <rect x="0" y="26" width="35" height="9" rx="1"/>
+      <!-- y descender bar -->
+      <rect x="0" y="42" width="35" height="9" rx="1"/>
+    </g>
+  </g>
 
   <!-- Tagline -->
-  <text x="440" y="218" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="500" fill="white" opacity="0.5">Soft skills training in Slack. Free forever.</text>
+  <g transform="translate(600, 210)">
+    <text x="0" y="22" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="500" fill="white" opacity="0.5">Soft skills training in Slack. Free forever.</text>
+  </g>
 
-  <!-- Trust chips -->
-  <text x="440" y="270" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="500" fill="#68ef3f" opacity="0.6">uply.work</text>
+  <!-- Accent line -->
+  <rect x="600" y="248" width="60" height="2" rx="1" fill="#68ef3f" opacity="0.3"/>
 
-  <!-- Decorative accent line -->
-  <rect x="440" y="236" width="60" height="2" rx="1" fill="#68ef3f" opacity="0.3"/>
+  <!-- URL -->
+  <text x="600" y="278" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="500" fill="#68ef3f" opacity="0.6">uply.work</text>
 
   <defs>
     <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
