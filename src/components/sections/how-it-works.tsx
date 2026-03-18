@@ -36,14 +36,14 @@ export function HowItWorks() {
       <div className="relative mt-16 grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
         {/* Connecting line (desktop only) */}
         <div
-          className="pointer-events-none absolute top-8 right-[calc(16.67%+1rem)] left-[calc(16.67%+1rem)] hidden h-px bg-uply-green/20 md:block"
+          className="pointer-events-none absolute top-8 right-[calc(16.67%+1rem)] left-[calc(16.67%+1rem)] hidden h-px bg-uply-green-muted/20 md:block"
           aria-hidden="true"
         />
 
         {STEPS.map((step) => (
           <div key={step.number} className="relative text-center">
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-uply-green/10">
-              <span className="text-xl font-bold text-uply-green">
+            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-2xl bg-uply-green-muted/10">
+              <span className="text-xl font-bold text-uply-green-muted">
                 {step.number}
               </span>
             </div>

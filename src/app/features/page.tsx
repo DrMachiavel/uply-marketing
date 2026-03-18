@@ -48,11 +48,11 @@ function LeaderboardMockup() {
                 <span className="text-sm font-medium text-white/80">
                   {u.name}
                 </span>
-                <span className="text-xs text-uply-green">{u.score} pts</span>
+                <span className="text-xs text-uply-green-muted">{u.score} pts</span>
               </div>
               <div className="h-1.5 rounded-full bg-white/5">
                 <div
-                  className={`h-1.5 rounded-full bg-uply-green/40 ${u.bar}`}
+                  className={`h-1.5 rounded-full bg-uply-green-muted/40 ${u.bar}`}
                 />
               </div>
             </div>
@@ -74,7 +74,7 @@ function TopicsPreview() {
   ];
 
   return (
-    <div className="w-full max-w-sm rounded-xl border border-uply-green/10 bg-white p-5 shadow-lg">
+    <div className="w-full max-w-sm rounded-xl border border-uply-green-muted/10 bg-white p-5 shadow-lg">
       <span className="text-sm font-semibold text-uply-dark">
         Available topics
       </span>
@@ -82,7 +82,7 @@ function TopicsPreview() {
         {tags.map((t) => (
           <span
             key={t}
-            className="rounded-full border border-uply-green/20 bg-uply-green-wash px-3 py-1.5 text-xs font-medium text-uply-dark"
+            className="rounded-full border border-uply-green-muted/20 bg-uply-green-wash px-3 py-1.5 text-xs font-medium text-uply-dark"
           >
             {t}
           </span>
@@ -114,11 +114,11 @@ function DashboardMockup() {
 
       <div className="mb-5 grid grid-cols-2 gap-4">
         <div className="rounded-lg bg-white/5 p-3 text-center">
-          <span className="block text-2xl font-bold text-uply-green">87%</span>
+          <span className="block text-2xl font-bold text-uply-green-muted">87%</span>
           <span className="text-xs text-white/50">Participation</span>
         </div>
         <div className="rounded-lg bg-white/5 p-3 text-center">
-          <span className="block text-2xl font-bold text-uply-green">
+          <span className="block text-2xl font-bold text-uply-green-muted">
             +12%
           </span>
           <span className="text-xs text-white/50">Skill growth</span>
@@ -134,7 +134,7 @@ function DashboardMockup() {
             </div>
             <div className="h-1.5 rounded-full bg-white/5">
               <div
-                className="h-1.5 rounded-full bg-uply-green/50"
+                className="h-1.5 rounded-full bg-uply-green-muted/50"
                 style={{ width: b.pct }}
               />
             </div>

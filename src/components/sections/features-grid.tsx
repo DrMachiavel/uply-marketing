@@ -46,8 +46,8 @@ export function FeaturesGrid() {
             key={feature.title}
             className="rounded-xl border border-uply-dark/5 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
           >
-            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-uply-green/10">
-              <feature.icon className="h-6 w-6 text-uply-green" />
+            <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-uply-green-muted/10">
+              <feature.icon className="h-6 w-6 text-uply-green-muted" />
             </div>
             <h3 className="mb-2 text-lg font-semibold">{feature.title}</h3>
             <p className="text-sm leading-relaxed text-uply-gray">

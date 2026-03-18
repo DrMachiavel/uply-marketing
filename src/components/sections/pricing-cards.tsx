@@ -43,7 +43,7 @@ export function PricingCards() {
             key={plan.name}
             className={`relative flex flex-col rounded-2xl border p-8 ${
               plan.popular
-                ? "border-uply-green shadow-[0_0_40px_-12px_rgba(104,239,63,0.25)]"
+                ? "border-uply-green-muted shadow-[0_0_40px_-12px_rgba(104,239,63,0.25)]"
                 : "border-gray-200 shadow-sm"
             }`}
           >
@@ -55,7 +55,7 @@ export function PricingCards() {
                     Popular
                   </span>
                 </div>
-                <div className="-mx-8 -mt-8 mb-6 rounded-t-2xl bg-uply-green/10 px-6 py-2.5 text-center text-sm font-medium text-uply-dark">
+                <div className="-mx-8 -mt-8 mb-6 rounded-t-2xl bg-uply-green-muted/10 px-6 py-2.5 text-center text-sm font-medium text-uply-dark">
                   Free during early access
                 </div>
               </>
@@ -84,7 +84,7 @@ export function PricingCards() {
               {plan.features.map((f) => (
                 <li key={f} className="flex items-start gap-2 text-sm">
                   <svg
-                    className="mt-0.5 h-4 w-4 shrink-0 text-uply-green"
+                    className="mt-0.5 h-4 w-4 shrink-0 text-uply-green-muted"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                     aria-hidden="true"

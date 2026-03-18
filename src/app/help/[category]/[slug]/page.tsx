@@ -77,7 +77,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       </Section>
 
       <Section theme="light">
-        <article className="prose prose-lg prose-gray mx-auto max-w-3xl prose-headings:font-bold prose-headings:text-uply-dark prose-a:text-uply-green prose-a:no-underline hover:prose-a:underline prose-strong:text-uply-dark">
+        <article className="prose prose-lg prose-gray mx-auto max-w-3xl prose-headings:font-bold prose-headings:text-uply-dark prose-a:text-uply-green-muted prose-a:no-underline hover:prose-a:underline prose-strong:text-uply-dark">
           <MDXRemote source={article.content} />
         </article>
 
@@ -87,13 +87,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <div className="mt-3 flex items-center justify-center gap-4">
             <button
               type="button"
-              className="rounded-lg border border-gray-200 px-4 py-2 text-sm text-uply-dark transition-colors hover:border-uply-green hover:text-uply-green"
+              className="rounded-lg border border-gray-200 px-4 py-2 text-sm text-uply-dark transition-colors hover:border-uply-green-muted hover:text-uply-green-muted"
             >
               Yes
             </button>
             <button
               type="button"
-              className="rounded-lg border border-gray-200 px-4 py-2 text-sm text-uply-dark transition-colors hover:border-uply-green hover:text-uply-green"
+              className="rounded-lg border border-gray-200 px-4 py-2 text-sm text-uply-dark transition-colors hover:border-uply-green-muted hover:text-uply-green-muted"
             >
               No
             </button>
@@ -104,7 +104,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         <div className="mx-auto mt-8 max-w-3xl text-center">
           <Link
             href={`/help/${category}`}
-            className="text-sm font-medium text-uply-green hover:underline"
+            className="text-sm font-medium text-uply-green-muted hover:underline"
           >
             &larr; Back to {categoryName}
           </Link>

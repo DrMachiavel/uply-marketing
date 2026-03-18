@@ -6,7 +6,7 @@ interface BadgeProps {
 export function Badge({ children, variant = "green" }: BadgeProps) {
   const styles =
     variant === "green"
-      ? "bg-uply-green/10 text-uply-green border-uply-green/20"
+      ? "bg-uply-green-muted/10 text-uply-green-muted border-uply-green-muted/20"
       : "bg-white/10 text-white border-white/20";
 
   return (

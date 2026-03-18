@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
               operates Uply, accessible at{" "}
               <a
                 href="https://uply.work"
-                className="text-uply-green hover:underline"
+                className="text-uply-green-muted hover:underline"
               >
                 uply.work
               </a>
@@ -133,7 +133,7 @@ export default function PrivacyPolicyPage() {
               us at{" "}
               <a
                 href="mailto:privacy@uply.work"
-                className="text-uply-green hover:underline"
+                className="text-uply-green-muted hover:underline"
               >
                 privacy@uply.work
               </a>
@@ -193,7 +193,7 @@ export default function PrivacyPolicyPage() {
               Email:{" "}
               <a
                 href="mailto:privacy@uply.work"
-                className="text-uply-green hover:underline"
+                className="text-uply-green-muted hover:underline"
               >
                 privacy@uply.work
               </a>

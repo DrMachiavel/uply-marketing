@@ -69,14 +69,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       {/* Content */}
       <Section theme="light">
-        <article className="prose prose-lg prose-gray mx-auto max-w-3xl prose-headings:font-bold prose-headings:text-uply-dark prose-a:text-uply-green prose-a:no-underline hover:prose-a:underline prose-strong:text-uply-dark">
+        <article className="prose prose-lg prose-gray mx-auto max-w-3xl prose-headings:font-bold prose-headings:text-uply-dark prose-a:text-uply-green-muted prose-a:no-underline hover:prose-a:underline prose-strong:text-uply-dark">
           <MDXRemote source={post.content} />
         </article>
 
         {/* Author bio */}
         <div className="mx-auto mt-16 max-w-3xl border-t border-gray-200 pt-8">
           <div className="flex items-center gap-4">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-uply-green/10 text-lg font-bold text-uply-green">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-uply-green-muted/10 text-lg font-bold text-uply-green-muted">
               U
             </div>
             <div>

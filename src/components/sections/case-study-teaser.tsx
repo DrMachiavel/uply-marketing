@@ -12,7 +12,7 @@ export function CaseStudyTeaser() {
     <Section theme="green-wash">
       <div className="overflow-hidden rounded-2xl bg-uply-green-wash">
         <div className="p-8 md:p-12">
-          <p className="mb-2 text-sm font-medium uppercase tracking-wider text-uply-green">
+          <p className="mb-2 text-sm font-medium uppercase tracking-wider text-uply-green-muted">
             Case study
           </p>
           <h2 className="mb-8 text-2xl font-bold tracking-tight md:text-3xl">
@@ -22,7 +22,7 @@ export function CaseStudyTeaser() {
           <div className="mb-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {STATS.map((stat) => (
               <div key={stat.label}>
-                <p className="text-3xl font-bold text-uply-green md:text-4xl">
+                <p className="text-3xl font-bold text-uply-green-muted md:text-4xl">
                   {stat.value}
                 </p>
                 <p className="mt-1 text-sm text-uply-gray">{stat.label}</p>

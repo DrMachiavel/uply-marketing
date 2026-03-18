@@ -38,9 +38,9 @@ export default function HelpCenterPage() {
               <a
                 key={category.slug}
                 href={`/help/${category.slug}`}
-                className="group rounded-xl border border-gray-200 p-6 transition-all hover:border-uply-green hover:shadow-md"
+                className="group rounded-xl border border-gray-200 p-6 transition-all hover:border-uply-green-muted hover:shadow-md"
               >
-                <h2 className="text-lg font-semibold text-uply-dark group-hover:text-uply-green">
+                <h2 className="text-lg font-semibold text-uply-dark group-hover:text-uply-green-muted">
                   {category.name}
                 </h2>
                 <p className="mt-2 text-sm text-uply-gray">
@@ -67,7 +67,7 @@ export default function HelpCenterPage() {
               Email us at{" "}
               <a
                 href={`mailto:${SITE_CONFIG.email.support}`}
-                className="font-medium text-uply-green hover:underline"
+                className="font-medium text-uply-green-muted hover:underline"
               >
                 {SITE_CONFIG.email.support}
               </a>

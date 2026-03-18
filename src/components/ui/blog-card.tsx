@@ -8,7 +8,7 @@ interface BlogCardProps {
 export function BlogCard({ post }: BlogCardProps) {
   return (
     <Link href={`/blog/${post.slug}`} className="group block">
-      <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-200 hover:-translate-y-1 hover:border-uply-green hover:shadow-lg">
+      <article className="overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-200 hover:-translate-y-1 hover:border-uply-green-muted hover:shadow-lg">
         {/* Thumbnail */}
         {post.image ? (
           <div className="aspect-[16/9] overflow-hidden">
@@ -19,9 +19,9 @@ export function BlogCard({ post }: BlogCardProps) {
             />
           </div>
         ) : (
-          <div className="flex aspect-[16/9] items-center justify-center bg-gradient-to-br from-uply-green/20 to-uply-green/5">
+          <div className="flex aspect-[16/9] items-center justify-center bg-gradient-to-br from-uply-green-muted/20 to-uply-green-muted/5">
             <svg
-              className="h-12 w-12 text-uply-green/40"
+              className="h-12 w-12 text-uply-green-muted/40"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
@@ -38,7 +38,7 @@ export function BlogCard({ post }: BlogCardProps) {
 
         {/* Content */}
         <div className="p-6">
-          <h3 className="text-lg font-bold text-uply-dark group-hover:text-uply-green transition-colors duration-200">
+          <h3 className="text-lg font-bold text-uply-dark group-hover:text-uply-green-muted transition-colors duration-200">
             {post.title}
           </h3>
           <p className="mt-2 line-clamp-2 text-sm text-uply-gray">

@@ -74,7 +74,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   <li key={article.slug}>
                     <Link
                       href={`/help/${category}/${article.slug}`}
-                      className="block py-4 transition-colors hover:text-uply-green"
+                      className="block py-4 transition-colors hover:text-uply-green-muted"
                     >
                       <span className="text-lg font-medium">
                         {article.title}

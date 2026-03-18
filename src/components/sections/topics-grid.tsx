@@ -50,10 +50,10 @@ export function TopicsGrid() {
         {topics.map((topic) => (
           <div
             key={topic.name}
-            className="rounded-xl border border-uply-green/10 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+            className="rounded-xl border border-uply-green-muted/10 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
           >
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-uply-green/10">
-              <topic.icon className="h-6 w-6 text-uply-green" />
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-uply-green-muted/10">
+              <topic.icon className="h-6 w-6 text-uply-green-muted" />
             </div>
             <h3 className="mt-3 text-lg font-semibold text-uply-dark">
               {topic.name}

@@ -49,7 +49,7 @@ function BackgroundEffect() {
 
 export function Hero() {
   return (
-    <Section theme="dark" className="relative overflow-hidden py-24 md:py-32">
+    <Section theme="dark" className="relative overflow-hidden pt-24 pb-12 md:pt-32 md:pb-16">
       <BackgroundEffect />
 
       <div className="relative z-10 grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
@@ -59,7 +59,7 @@ export function Hero() {
 
           <h1 className="mt-6 text-4xl leading-tight font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
             Your team doesn&apos;t have time for soft skills training.{" "}
-            <span className="text-uply-green">
+            <span className="text-uply-green-muted">
               That&apos;s exactly the point.
             </span>
           </h1>

@@ -22,7 +22,7 @@ function CellContent({ value }: { value: CellValue }) {
   if (value === true) {
     return (
       <svg
-        className="mx-auto h-5 w-5 text-uply-green"
+        className="mx-auto h-5 w-5 text-uply-green-muted"
         viewBox="0 0 20 20"
         fill="currentColor"
         aria-label="Included"

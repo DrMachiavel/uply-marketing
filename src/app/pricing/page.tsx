@@ -42,7 +42,7 @@ export default function PricingPage() {
         <Section theme="green-wash">
           <p className="text-center text-lg font-medium text-uply-dark">
             🎉 Pro is{" "}
-            <span className="font-bold text-uply-green">
+            <span className="font-bold text-uply-green-muted">
               free during early access
             </span>
             . Normally $1/user/month.
