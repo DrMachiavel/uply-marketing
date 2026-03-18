@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   url: "https://uply.work",
   social: {
     linkedin: "https://www.linkedin.com/company/uply-skills/",
-    twitter: "#", // TODO: Replace with actual Uply X/Twitter URL
+    twitter: "",
   },
   email: {
     support: "support@uply.work",
