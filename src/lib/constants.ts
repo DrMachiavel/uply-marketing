@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
     "Daily micro-lessons in Slack. 2 minutes a day, weekly leaderboards, and measurable growth in leadership, collaboration, and communication skills.",
   url: "https://uply.work",
   social: {
-    linkedin: "#", // TODO: Replace with actual Uply LinkedIn URL
+    linkedin: "https://www.linkedin.com/company/uply-skills/",
     twitter: "#", // TODO: Replace with actual Uply X/Twitter URL
   },
   email: {
