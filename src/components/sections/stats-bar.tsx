@@ -1,8 +1,8 @@
 import { Section } from "@/components/ui/section";
 
 const STATS = [
-  { value: "2,500+", label: "employees trained" },
-  { value: "50,000+", label: "questions answered" },
+  { value: "25,000+", label: "employees trained" },
+  { value: "500k+", label: "questions answered" },
   { value: "94%", label: "weekly completion rate" },
 ];
 

@@ -6,7 +6,8 @@
   --color-uply-dark: #162415;
   --color-uply-dark-elevated: #1e3220;
   --color-uply-green: #68ef3f;
-  --color-uply-green-light: #4ade80;
+  --color-uply-green-muted: #4ade80;
+  --color-uply-green-light: #86efac;
   --color-uply-green-wash: #f0fdf4;
   --color-uply-gray: #6b7280;
   --color-uply-gray-light: #9ca3af;
@@ -67,4 +68,18 @@
 .animate-float-3 {
   animation: float-slow-3 20s ease-in-out infinite;
   animation-delay: -15s;
+}
+
+/* Infinite scrolling marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }

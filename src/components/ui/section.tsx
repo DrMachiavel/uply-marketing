@@ -20,7 +20,7 @@ export function Section({
   id,
 }: SectionProps) {
   return (
-    <section id={id} className={`py-20 px-6 ${themeStyles[theme]} ${className}`}>
+    <section id={id} className={`py-28 px-6 md:py-32 ${themeStyles[theme]} ${className}`}>
       <div className="mx-auto max-w-6xl">{children}</div>
     </section>
   );
