@@ -12,6 +12,13 @@ const footerColumns = [
     ],
   },
   {
+    title: "Tools",
+    links: [
+      { href: "/tools/turnover-calculator", label: "Turnover Cost Calculator" },
+      { href: "/tools/growth-calculator", label: "Lost Growth Calculator" },
+    ],
+  },
+  {
     title: "Support",
     links: [
       { href: "/help", label: "Help Center" },
@@ -20,7 +27,12 @@ const footerColumns = [
   },
   {
     title: "Legal",
-    links: [{ href: "/privacy", label: "Privacy Policy" }],
+    links: [
+      { href: "/privacy", label: "Privacy Policy" },
+      { href: "/terms", label: "Terms of Service" },
+      { href: "/dpa", label: "DPA" },
+      { href: "/security", label: "Security" },
+    ],
   },
 ];
 
@@ -28,7 +40,7 @@ export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-uply-dark px-6 py-16">
       <div className="mx-auto max-w-6xl">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
           <div className="col-span-2 md:col-span-1">
             <Logo size="sm" />
             <p className="mt-3 text-sm text-white/40">
