@@ -39,12 +39,9 @@ const sizes = {
 export function Logo({ size = "md" }: LogoProps) {
   const s = sizes[size];
   return (
-    <Link href="/" className="flex items-center gap-0">
+    <Link href="/" className="flex items-center gap-0.5">
       <LogoIcon size={s.icon} />
-      <span
-        className={`${s.text} font-extrabold text-uply-green`}
-        style={{ marginLeft: "-1px" }}
-      >
+      <span className={`${s.text} font-extrabold text-uply-green`}>
         ply
       </span>
     </Link>

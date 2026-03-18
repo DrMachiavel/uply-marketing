@@ -95,9 +95,13 @@ export function SlackMockup({
 
             {/* Bot message */}
             <div className="flex gap-3">
-              {/* Avatar */}
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-uply-green text-sm font-bold text-uply-dark">
-                U
+              {/* Avatar — Uply logo */}
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg overflow-hidden">
+                <svg width="36" height="36" viewBox="0 0 140 140" fill="none">
+                  <rect width="140" height="140" rx="28" fill="#68ef3f"/>
+                  <path d="M34 52C34 52 34 104 70 104C106 104 106 52 106 52" stroke="#162415" strokeWidth="13" strokeLinecap="round"/>
+                  <circle cx="70" cy="38" r="8" fill="#162415"/>
+                </svg>
               </div>
 
               <div className="min-w-0 flex-1">
