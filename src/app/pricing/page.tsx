@@ -5,17 +5,45 @@ import { FadeIn } from "@/components/ui/fade-in";
 import { PricingCards } from "@/components/sections/pricing-cards";
 import { PricingComparison } from "@/components/sections/pricing-comparison";
 import { FAQ } from "@/components/sections/faq";
+import { faqs } from "@/lib/faq-data";
 import { CTASection } from "@/components/sections/cta-section";
+import {
+  buildMetadata,
+  productJsonLd,
+  faqJsonLd,
+  breadcrumbJsonLd,
+  JsonLdScript,
+} from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Pricing",
   description:
-    "Simple, transparent pricing for Uply. Start free, upgrade when you're ready.",
-};
+    "Simple, transparent pricing for Uply. Start free, upgrade when you're ready. Free plan for up to 5 users, Pro at $1/user/month.",
+  path: "/pricing",
+});
 
 export default function PricingPage() {
   return (
     <>
+      <JsonLdScript
+        data={productJsonLd([
+          { name: "Free", price: "0", description: "Up to 5 users, 1 topic" },
+          {
+            name: "Pro",
+            price: "1",
+            description:
+              "Unlimited users, all topics, leaderboards, analytics. Free during early access.",
+          },
+        ])}
+      />
+      <JsonLdScript data={faqJsonLd(faqs)} />
+      <JsonLdScript
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Pricing", path: "/pricing" },
+        ])}
+      />
+
       {/* Hero */}
       <FadeIn>
         <Section theme="dark">

@@ -8,10 +8,12 @@ import { Testimonials } from "@/components/sections/testimonials";
 import { CaseStudyTeaser } from "@/components/sections/case-study-teaser";
 import { CTASection } from "@/components/sections/cta-section";
 import { FadeIn } from "@/components/ui/fade-in";
+import { webSiteJsonLd, JsonLdScript } from "@/lib/seo";
 
 export default function HomePage() {
   return (
     <>
+      <JsonLdScript data={webSiteJsonLd()} />
       <FadeIn>
         <Hero />
       </FadeIn>

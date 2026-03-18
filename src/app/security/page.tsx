@@ -11,12 +11,14 @@ import {
   AlertTriangle,
   Mail,
 } from "lucide-react";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Security",
   description:
     "Learn how Uply protects your data. EU-hosted, encrypted, GDPR-compliant security practices for your Slack workspace.",
-};
+  path: "/security",
+});
 
 const securityCards = [
   {

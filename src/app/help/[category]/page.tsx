@@ -8,6 +8,7 @@ import {
   getArticlesByCategory,
   getCategoryName,
 } from "@/lib/help";
+import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
 
 interface CategoryPageProps {
   params: Promise<{ category: string }>;
@@ -28,10 +29,11 @@ export async function generateMetadata({
     return { title: "Category Not Found" };
   }
 
-  return {
+  return buildMetadata({
     title: `${name} — Help Center`,
-    description: `Help articles about ${name.toLowerCase()} in Uply.`,
-  };
+    description: `Learn about ${name.toLowerCase()} in Uply. Step-by-step guides and answers to common questions.`,
+    path: `/help/${category}`,
+  });
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
@@ -46,6 +48,14 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   return (
     <>
+      <JsonLdScript
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Help Center", path: "/help" },
+          { name, path: `/help/${category}` },
+        ])}
+      />
+
       <Section theme="dark">
         <FadeIn>
           <nav className="mb-4 text-sm text-white/50">

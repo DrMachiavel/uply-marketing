@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { FadeIn } from "@/components/ui/fade-in";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Terms of Service",
   description:
     "Terms of Service for Uply, the Slack-based soft skills and compliance training platform. Read our terms at uply.work.",
-};
+  path: "/terms",
+});
 
 export default function TermsOfServicePage() {
   return (

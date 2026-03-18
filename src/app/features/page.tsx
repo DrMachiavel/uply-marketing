@@ -6,12 +6,14 @@ import { SlackMockup } from "@/components/ui/slack-mockup";
 import { FeatureBlock } from "@/components/sections/feature-block";
 import { TopicsGrid } from "@/components/sections/topics-grid";
 import { CTASection } from "@/components/sections/cta-section";
+import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Features",
   description:
-    "Daily micro-lessons, weekly leaderboards, and team insights — all in Slack.",
-};
+    "Daily micro-lessons, weekly leaderboards, and team insights — all delivered inside Slack. See how Uply builds soft skills in 2 minutes a day.",
+  path: "/features",
+});
 
 /* ---------- Inline visuals ---------- */
 
@@ -150,6 +152,12 @@ function DashboardMockup() {
 export default function FeaturesPage() {
   return (
     <>
+      <JsonLdScript
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Features", path: "/features" },
+        ])}
+      />
       {/* Hero */}
       <FadeIn>
         <Section theme="dark">

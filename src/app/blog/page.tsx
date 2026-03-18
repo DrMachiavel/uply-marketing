@@ -3,18 +3,26 @@ import { Section } from "@/components/ui/section";
 import { BlogCard } from "@/components/ui/blog-card";
 import { getAllPosts } from "@/lib/mdx";
 import { FadeIn } from "@/components/ui/fade-in";
+import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Blog | Uply",
+export const metadata: Metadata = buildMetadata({
+  title: "Blog",
   description:
     "Thoughts on leadership, soft skills, and building better teams. Insights from the Uply team on micro-learning, habit formation, and workplace culture.",
-};
+  path: "/blog",
+});
 
 export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
     <>
+      <JsonLdScript
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+        ])}
+      />
       {/* Header */}
       <Section theme="dark">
         <FadeIn>

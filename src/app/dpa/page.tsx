@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { FadeIn } from "@/components/ui/fade-in";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Data Processing Agreement",
   description:
     "Data Processing Agreement (DPA) for Uply. GDPR-compliant data processing terms for businesses using uply.work.",
-};
+  path: "/dpa",
+});
 
 export default function DataProcessingAgreementPage() {
   return (

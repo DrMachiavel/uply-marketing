@@ -3,19 +3,27 @@ import { Section } from "@/components/ui/section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { getHelpCategories } from "@/lib/help";
 import { SITE_CONFIG } from "@/lib/constants";
+import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
 import { HelpSearch } from "./help-search";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Help Center",
   description:
     "Find answers to common questions about Uply — setup, daily lessons, scoring, billing, and privacy.",
-};
+  path: "/help",
+});
 
 export default function HelpCenterPage() {
   const categories = getHelpCategories();
 
   return (
     <>
+      <JsonLdScript
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Help Center", path: "/help" },
+        ])}
+      />
       {/* Header */}
       <Section theme="dark">
         <FadeIn>

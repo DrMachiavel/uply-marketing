@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { CookieBanner } from "@/components/ui/cookie-banner";
+import { getBaseUrl, organizationJsonLd, softwareApplicationJsonLd, JsonLdScript } from "@/lib/seo";
+import { SITE_CONFIG } from "@/lib/constants";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,20 +12,40 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const baseUrl = getBaseUrl();
+
 export const metadata: Metadata = {
   title: {
     default: "Uply — Soft skills training that lives in Slack",
     template: "%s | Uply",
   },
-  description:
-    "Daily micro-lessons in Slack. 2 minutes a day, weekly leaderboards, and measurable growth in leadership, collaboration, and communication skills.",
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://uply.work"
-  ),
+  description: SITE_CONFIG.description,
+  metadataBase: new URL(baseUrl),
+  alternates: {
+    canonical: baseUrl,
+    languages: {
+      "en": baseUrl,
+      "x-default": baseUrl,
+    },
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Uply",
+    siteName: SITE_CONFIG.name,
+    title: "Uply — Soft skills training that lives in Slack",
+    description: SITE_CONFIG.description,
+    url: baseUrl,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Uply — Soft skills training that lives in Slack",
+    description: SITE_CONFIG.description,
+  },
+  manifest: "/manifest.json",
+  other: {
+    "geo.region": "EU",
+    "geo.placename": "Lille, France",
+    "ICBM": "50.6292, 3.0573",
   },
 };
 
@@ -35,18 +57,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="bg-uply-dark font-sans antialiased">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Uply",
-              url: "https://uply.work",
-              description: "Soft skills training that lives in Slack",
-            }),
-          }}
-        />
+        <JsonLdScript data={organizationJsonLd()} />
+        <JsonLdScript data={softwareApplicationJsonLd()} />
         <Navbar />
         <main className="pt-[73px]">{children}</main>
         <Footer />

@@ -6,6 +6,12 @@ import { BlogCard } from "@/components/ui/blog-card";
 import { CTASection } from "@/components/sections/cta-section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { getAllPosts, getPostBySlug, getRecentPosts } from "@/lib/mdx";
+import {
+  buildMetadata,
+  articleJsonLd,
+  breadcrumbJsonLd,
+  JsonLdScript,
+} from "@/lib/seo";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -26,10 +32,17 @@ export async function generateMetadata({
     return { title: "Post Not Found | Uply" };
   }
 
-  return {
+  return buildMetadata({
     title: `${post.title} | Uply Blog`,
     description: post.excerpt,
-  };
+    path: `/blog/${post.slug}`,
+    openGraph: {
+      type: "article",
+      publishedTime: post.date,
+      authors: [post.author],
+      section: "Soft Skills",
+    },
+  });
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
@@ -44,6 +57,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <>
+      <JsonLdScript data={articleJsonLd(post)} />
+      <JsonLdScript
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: post.title, path: `/blog/${post.slug}` },
+        ])}
+      />
+
       {/* Header */}
       <Section theme="dark">
         <FadeIn>

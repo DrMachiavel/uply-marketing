@@ -10,6 +10,7 @@ import {
   getHelpArticle,
   getCategoryName,
 } from "@/lib/help";
+import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
 
 interface ArticlePageProps {
   params: Promise<{ category: string; slug: string }>;
@@ -37,10 +38,21 @@ export async function generateMetadata({
     return { title: "Article Not Found" };
   }
 
-  return {
+  // Extract first ~160 chars of content for a real description
+  const plainText = article.content
+    .replace(/[#*`\[\]()>_~-]/g, "")
+    .replace(/\n+/g, " ")
+    .trim();
+  const description =
+    plainText.length > 155
+      ? `${plainText.slice(0, 155)}...`
+      : plainText;
+
+  return buildMetadata({
     title: `${article.title} — Help Center`,
-    description: `${article.title} — Uply Help Center`,
-  };
+    description: description || `${article.title} — Uply Help Center`,
+    path: `/help/${category}/${slug}`,
+  });
 }
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
@@ -54,6 +66,15 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   return (
     <>
+      <JsonLdScript
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Help Center", path: "/help" },
+          { name: categoryName, path: `/help/${category}` },
+          { name: article.title, path: `/help/${category}/${slug}` },
+        ])}
+      />
+
       <Section theme="dark">
         <FadeIn>
           <nav className="mb-4 text-sm text-white/50">

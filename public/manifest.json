@@ -1,0 +1,22 @@
+{
+  "name": "Uply — Soft skills training in Slack",
+  "short_name": "Uply",
+  "description": "Daily micro-lessons in Slack. 2 minutes a day, weekly leaderboards, and measurable growth in leadership, collaboration, and communication skills.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0a0f0a",
+  "theme_color": "#68ef3f",
+  "icons": [
+    {
+      "src": "/images/logo/uply-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo/uply-icon-square.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

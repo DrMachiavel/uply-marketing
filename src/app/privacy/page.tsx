@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Section } from "@/components/ui/section";
 import { FadeIn } from "@/components/ui/fade-in";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
   description:
     "Learn how Uply collects, uses, and protects your data. GDPR-compliant privacy policy for uply.work.",
-};
+  path: "/privacy",
+});
 
 export default function PrivacyPolicyPage() {
   return (
