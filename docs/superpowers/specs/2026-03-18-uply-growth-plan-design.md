@@ -90,15 +90,110 @@ Submit to the Slack App Directory in Week 1. Even if approval takes 4-6 weeks, t
 
 Use the direct private install link in parallel until approved.
 
-### 2.2 ProductHunt Launch
+### 2.2 Launch Platforms
 
+Beyond ProductHunt, coordinate launches across multiple platforms for maximum reach:
+
+| Platform | Cost | Expected Impact | Timing |
+|---|---|---|---|
+| **ProductHunt** | Free | High — 1,000+ signups possible on launch day | Week 4 (primary launch) |
+| **Hacker News (Show HN)** | Free | Medium-High — front page = 20-30K visitors/day. "Slack-native" angle fits HN | Week 4 (same week as PH) |
+| **BetaList** | $129 (expedited) | Medium — typically 300-1,000 beta testers. Worth the spend. | Week 2 (submit early, goes live ~Week 4) |
+| **Uneed** | $30 (skip queue) | Medium — 200K+ monthly visits, PH-style format | Week 3 |
+
+**ProductHunt specifics:**
 - Dedicated launch page on uply.work
 - Tagline: *"Your team's soft skills gym — 2 minutes a day in Slack"*
 - PH-exclusive deal: **"First 50 teams get Pro free for 12 months after early access ends"** (capped at 50 teams, time-limited to 12 months, applies to workspaces of up to 25 users)
 - Launch on a Tuesday, coordinate upvotes from personal networks and French tech community
 - Prepare 2 weeks in advance (assets, copy, community warm-up)
 
-### 2.3 Targeted Founder Outreach
+**Show HN specifics:**
+- Post title: "Show HN: Uply — Soft skills training in Slack, 2 min/day"
+- Write a concise Show HN comment explaining the problem, solution, and what's unique
+- Best posted morning US Eastern time, ideally not the same day as PH (day after)
+
+### 2.3 Directories & Listings
+
+Permanent listings for ongoing organic discovery and SEO backlinks. Most are one-time, low-effort submissions.
+
+**Priority 1 — Submit in Week 1 (~2 hours total):**
+
+| Directory | Cost | Why |
+|---|---|---|
+| **G2** | Free | Dominant B2B review site. High-intent buyers actively compare tools here. |
+| **Capterra** (+ GetApp + Software Advice) | Free | One listing = 3 platforms. High-intent traffic from Gartner network. |
+| **eLearning Industry** | Free | Your exact buyer persona (L&D professionals) discovers tools here. |
+| **SaaSHub** | Free | DR 76 domain — strong SEO backlink value. |
+| **AlternativeTo** | Free | List as alternative to Lessonly, EdApp, TalentLMS, etc. |
+
+**Priority 2 — Submit in Weeks 3-4 (~1 hour total):**
+
+| Directory | Cost | Why |
+|---|---|---|
+| **Startup Stash** | Free | Curated startup tools directory. |
+| **SaaSBison** | Free | AI-powered SaaS discovery platform. |
+| **Launching Next** | Free | Long-running directory, low effort. |
+| **Peerlist** | Free | Good for indie/building-in-public credibility. |
+| **Open Launch** | Free | Newer platform, less saturated. |
+
+### 2.4 Reddit Strategy
+
+Reddit is a high-value channel for Uply — the target personas (startup founders, HR professionals, engineering managers) are active there. The key is **genuine participation first, promotion second**.
+
+**High-priority subreddits:**
+
+| Subreddit | Size | Strategy |
+|---|---|---|
+| **r/SaaS** | ~386K | Weekly Feedback Thread for sharing Uply. Allows thoughtful self-promotion. |
+| **r/humanresources** | ~100K+ | Answer training-related questions, naturally mention Uply when relevant. Buyer persona lives here. |
+| **r/Slack** | ~50K | Directly relevant. Share as a useful Slack app. Small community = high visibility. |
+| **r/Leadership** | ~50K | Content about leadership development aligns perfectly with Uply's value prop. |
+| **r/startups** | ~1.2M | Launch stories and traction updates. Strict rules — share the journey, don't hard-sell. |
+
+**Secondary subreddits (engage when relevant):**
+
+| Subreddit | Size | Strategy |
+|---|---|---|
+| **r/Entrepreneur** | ~3.5M | Business-building story angle. |
+| **r/SideProject** | ~200K | "Look what I built" feedback posts. |
+| **r/indiehackers** | ~100K+ | Supportive of new launches, good for early feedback. |
+| **r/Productivity** | ~2M+ | Frame around team productivity through soft skills. |
+
+**Reddit playbook:**
+1. **Weeks 1-2**: Build karma. Comment helpfully on r/SaaS, r/humanresources, r/startups. No mentions of Uply yet.
+2. **Week 3-4**: Post in r/SaaS Feedback Thread and r/SideProject. Share the building story on r/startups.
+3. **Ongoing**: 15 min/day engaging in 2-3 subreddits. Answer questions, share insights, mention Uply only when genuinely relevant.
+
+### 2.5 Community Engagement
+
+Join and actively participate in communities where the buyer persona congregates:
+
+**Slack communities (high priority):**
+
+| Community | Why |
+|---|---|
+| **Resources for Humans** (by Lattice) | 23K+ HR/People Ops professionals. Exact buyer persona. |
+| **People Geeks** (by Culture Amp) | People Ops community. Training tools get discovered here. |
+| **Startup Chat** | 6,800+ startup founders. Founder-to-founder discovery. |
+| **Ramen Club** | Bootstrapped founders. Potential early adopters + peer support. |
+
+**Other communities:**
+
+| Community | Why |
+|---|---|
+| **Indie Hackers** | Share building journey. Long-form traction posts perform well. |
+| **Hacking HR** | 1M+ members. HR + technology intersection. |
+| **eLearning Industry Community** | Accepts guest posts about microlearning — content marketing opportunity. |
+| **Corporate Learning Network** | 20K+ senior L&D professionals. |
+
+**Community playbook:**
+1. Join 3-4 communities in Week 1 (don't overextend)
+2. Spend 15 min/day for the first 2 weeks just participating — answering questions, sharing takes
+3. After building credibility, naturally introduce Uply when the conversation fits
+4. Post a building-in-public journey on Indie Hackers (Week 3-4)
+
+### 2.6 Targeted Founder Outreach
 
 Surgical, not spray-and-pray. 50-100 targets over 6 weeks.
 
@@ -107,11 +202,9 @@ Surgical, not spray-and-pray. 50-100 targets over 6 weeks.
 - **Message framework**: Lead with pain ("Your managers are learning leadership by trial and error"), offer the free tool, emphasize 2 minutes/day in Slack
 - **Volume**: 10-15 personalized messages/week, split between both founders. AI drafts, humans personalize.
 
-### 2.4 Startup Ecosystem Partnerships
+### 2.7 Startup Ecosystem Partnerships
 
 - **Accelerator perks**: Apply to be a perk partner at YC, Techstars, Station F, eFounders. "Free Pro for all portfolio companies."
-- **Slack communities**: Join 5-10 startup Slack communities (Lenny's, On Deck, Indie Hackers). Participate genuinely, mention Uply when relevant.
-- **Startup tool directories**: Free listings on StackShare, SaaSHub, AlternativeTo, G2.
 
 ---
 
@@ -237,21 +330,28 @@ These features require changes to the Slack app backend, **not** the marketing s
 
 ## 7. 90-Day Execution Timeline
 
-### Weeks 1-3: Build the engine (~30 hrs)
+### Weeks 1-3: Build the engine + seed communities (~30 hrs)
 - Submit Slack App Directory application (1h)
+- Submit to Priority 1 directories: G2, Capterra, eLearning Industry, SaaSHub, AlternativeTo (2h)
+- Submit to BetaList ($129 expedited) and Uneed ($30 skip) (1h)
 - Add email capture to existing calculators (3-4h)
 - Build referral landing page with UTM links (3-4h)
 - Build ProductHunt launch page (4-5h)
 - Set up Loops.so + email nurture sequence (4-5h)
 - Publish the 7 drafted blog posts (2h)
 - Prepare PH assets (screenshots, copy, GIF) (3-4h)
-- **Product side**: Ensure Slack channel visibility posts are working (Sections 1.1)
+- Start building Reddit karma — comment on r/SaaS, r/humanresources, r/startups (15 min/day)
+- Join 3-4 Slack communities (Resources for Humans, People Geeks, Startup Chat) and start participating
+- **Product side**: Ensure Slack channel visibility posts are working (Section 1.1)
 
-### Week 4: Launch (~10 hrs)
-- Launch on ProductHunt
+### Week 4: Launch blitz (~10 hrs)
+- Launch on ProductHunt (Tuesday)
+- Post Show HN (Wednesday or Thursday)
+- Post in r/SaaS Feedback Thread + r/SideProject
+- Submit to Priority 2 directories (Startup Stash, SaaSBison, Launching Next, Peerlist)
 - Begin targeted founder outreach (10-15 messages/week)
 - Apply to 3 accelerator perk programs
-- Join 5 startup Slack communities
+- Post building-in-public story on Indie Hackers
 
 ### Weeks 5-8: Amplify (~40 hrs)
 - Start LinkedIn posting (2x/week from one founder)
@@ -259,6 +359,7 @@ These features require changes to the Slack app backend, **not** the marketing s
 - Build team skills assessment quiz (8-10h)
 - Test 1 newsletter sponsorship
 - Continue outreach cadence
+- Continue Reddit engagement (15 min/day, 2-3 subreddits)
 - **Product side**: Begin referral tracking backend
 
 ### Weeks 9-12: Optimize (~40 hrs)
@@ -267,6 +368,7 @@ These features require changes to the Slack app backend, **not** the marketing s
 - Write first pillar guide page (4-5h)
 - Implement shareable team badges (4-5h)
 - Test LinkedIn ads with small budget ($100-200)
+- Submit guest post to eLearning Industry Community
 - **Product side**: Ship referral tracking, start badge API
 
 ---
