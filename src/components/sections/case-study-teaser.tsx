@@ -9,7 +9,7 @@ const STATS = [
 
 export function CaseStudyTeaser() {
   return (
-    <Section theme="light">
+    <Section theme="green-wash">
       <div className="overflow-hidden rounded-2xl bg-uply-green-wash">
         <div className="p-8 md:p-12">
           <p className="mb-2 text-sm font-medium uppercase tracking-wider text-uply-green">

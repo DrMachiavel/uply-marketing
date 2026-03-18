@@ -1,6 +1,13 @@
 import { Section } from "@/components/ui/section";
 
-const COMPANIES = ["Acme", "Relay", "Northwind", "Pollen", "Sidecar", "Basecamp"];
+const COMPANIES = [
+  { name: "Edusign", style: "font-bold tracking-tight" },
+  { name: "Qonto", style: "font-extrabold tracking-tight" },
+  { name: "Swile", style: "font-bold italic" },
+  { name: "PayFit", style: "font-extrabold" },
+  { name: "Spendesk", style: "font-semibold tracking-wide" },
+  { name: "Alan", style: "font-bold tracking-widest uppercase text-lg" },
+];
 
 export function SocialProof() {
   return (
@@ -12,10 +19,10 @@ export function SocialProof() {
         <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4">
           {COMPANIES.map((company) => (
             <span
-              key={company}
-              className="text-xl font-semibold text-white/30 select-none"
+              key={company.name}
+              className={`text-xl text-white/30 select-none ${company.style}`}
             >
-              {company}
+              {company.name}
             </span>
           ))}
         </div>

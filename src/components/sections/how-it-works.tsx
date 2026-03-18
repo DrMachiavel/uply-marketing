@@ -23,7 +23,7 @@ const STEPS = [
 
 export function HowItWorks() {
   return (
-    <Section theme="light" id="how-it-works">
+    <Section theme="green-wash" id="how-it-works">
       <div className="text-center">
         <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
           How it works

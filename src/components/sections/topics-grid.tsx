@@ -1,33 +1,34 @@
 import { Section } from "@/components/ui/section";
+import { Target, Users, MessageCircle, PenLine, Scale, Clock, type LucideIcon } from "lucide-react";
 
-const topics = [
+const topics: { icon: LucideIcon; name: string; description: string }[] = [
   {
-    icon: "🎯",
+    icon: Target,
     name: "Leadership",
     description: "Build confidence in guiding teams and making decisions.",
   },
   {
-    icon: "🤝",
+    icon: Users,
     name: "Collaboration",
     description: "Strengthen teamwork and cross-functional partnerships.",
   },
   {
-    icon: "💬",
+    icon: MessageCircle,
     name: "Communication",
     description: "Master clear, empathetic, and effective communication.",
   },
   {
-    icon: "📝",
+    icon: PenLine,
     name: "Feedback",
     description: "Give and receive feedback that drives real growth.",
   },
   {
-    icon: "⚖️",
+    icon: Scale,
     name: "Conflict Resolution",
     description: "Navigate disagreements with poise and empathy.",
   },
   {
-    icon: "⏱️",
+    icon: Clock,
     name: "Time Management",
     description: "Prioritize effectively and protect focused work time.",
   },
@@ -51,9 +52,9 @@ export function TopicsGrid() {
             key={topic.name}
             className="rounded-xl border border-uply-green/10 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
           >
-            <span className="text-3xl" role="img" aria-label={topic.name}>
-              {topic.icon}
-            </span>
+            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-uply-green/10">
+              <topic.icon className="h-6 w-6 text-uply-green" />
+            </div>
             <h3 className="mt-3 text-lg font-semibold text-uply-dark">
               {topic.name}
             </h3>
