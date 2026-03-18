@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { CookieBanner } from "@/components/ui/cookie-banner";
 import "./globals.css";
 
 const inter = Inter({
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Navbar />
         <main className="pt-[73px]">{children}</main>
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

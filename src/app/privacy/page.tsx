@@ -143,14 +143,31 @@ export default function PrivacyPolicyPage() {
             {/* 8. Cookies */}
             <h2>8. Cookies</h2>
             <p>
-              Our website at uply.work uses essential cookies only. These
-              cookies are strictly necessary for the operation of our website and
-              cannot be disabled. We do not use tracking cookies, advertising
-              cookies, or any third-party analytics cookies. Because we only use
-              essential cookies, no cookie consent banner is required under
-              current EU regulations. If our cookie practices change in the
-              future, we will update this policy and implement appropriate
-              consent mechanisms.
+              Our website at uply.work uses cookies to ensure the proper
+              functioning of the site and to improve your experience. We
+              categorize cookies as follows:
+            </p>
+            <p>
+              <strong>Essential cookies</strong> — These cookies are strictly
+              necessary for the website to function (e.g., session management,
+              security tokens, cookie consent preferences). They cannot be
+              disabled and do not require your consent under EU regulations.
+            </p>
+            <p>
+              <strong>Analytics cookies</strong> — We may use anonymous,
+              privacy-friendly analytics to understand how visitors use our
+              website (e.g., pages visited, time on site). These cookies do not
+              track you across other websites, do not collect personally
+              identifiable information, and are only activated with your
+              explicit consent.
+            </p>
+            <p>
+              We do not use advertising cookies, retargeting cookies, or any
+              cookies from third-party ad networks. You can manage your cookie
+              preferences at any time via the cookie banner displayed on our
+              website. If you decline optional cookies, only essential cookies
+              will be used, and your experience on the site will not be
+              affected.
             </p>
 
             {/* 9. Data Retention */}
@@ -189,6 +206,10 @@ export default function PrivacyPolicyPage() {
             </p>
             <p>
               <strong>ECOMMERCE RTM</strong>
+              <br />
+              1 PL LEROUX DE FAUQUEMONT, 59000 LILLE, France
+              <br />
+              SIRET: 87904454300012
               <br />
               Email:{" "}
               <a

@@ -28,6 +28,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "https://uply.work/blog", lastModified: new Date() },
     { url: "https://uply.work/help", lastModified: new Date() },
     { url: "https://uply.work/privacy", lastModified: new Date() },
+    { url: "https://uply.work/terms", lastModified: new Date() },
+    { url: "https://uply.work/dpa", lastModified: new Date() },
+    { url: "https://uply.work/security", lastModified: new Date() },
     ...blogUrls,
     ...helpUrls,
   ];
