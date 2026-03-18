@@ -24,25 +24,24 @@ function SlackIcon({ className }: { className?: string }) {
 function BackgroundEffect() {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
-      <div className="animate-float-1 absolute right-[-10%] top-1/2 h-[600px] w-[600px] -translate-y-1/2 rounded-full bg-uply-green/[0.07] blur-[120px]" />
-      <div className="animate-float-2 absolute left-[-5%] top-[10%] h-[300px] w-[300px] rounded-full bg-uply-green/[0.04] blur-[100px]" />
-      <div className="animate-float-3 absolute left-[30%] bottom-[10%] h-[400px] w-[400px] rounded-full bg-uply-green/[0.05] blur-[130px]" />
-      <div
-        className="absolute inset-0 opacity-[0.03]"
-        style={{
-          backgroundImage: `linear-gradient(rgba(104, 239, 63, 0.3) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(104, 239, 63, 0.3) 1px, transparent 1px)`,
-          backgroundSize: "60px 60px",
-        }}
-      />
+      {/* Primary glow — right side, behind mockup */}
+      <div className="animate-float-1 absolute right-[-10%] top-[20%] h-[800px] w-[800px] rounded-full bg-uply-green/[0.07] blur-[250px]" />
+      {/* Secondary glow — top left */}
+      <div className="animate-float-2 absolute left-[-12%] top-[0%] h-[600px] w-[600px] rounded-full bg-uply-green/[0.05] blur-[220px]" />
+      {/* Third glow — bottom center */}
+      <div className="animate-float-3 absolute bottom-[-10%] left-[20%] h-[600px] w-[600px] rounded-full bg-uply-green/[0.04] blur-[230px]" />
+      {/* Subtle noise texture for depth */}
+      <div className="absolute inset-0 opacity-[0.015]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")", backgroundSize: "128px 128px" }} />
     </div>
   );
 }
 
 export function Hero() {
   return (
-    <Section theme="dark" className="relative overflow-hidden pt-24 pb-12 md:pt-32 md:pb-16">
+    <Section theme="dark" className="relative overflow-hidden pt-24 pb-20 md:pt-32 md:pb-28">
       <BackgroundEffect />
+      {/* Bottom fade — softens transition to next section */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-32 bg-gradient-to-b from-transparent to-uply-dark" />
 
       <div className="relative z-10 grid items-center gap-10 lg:grid-cols-[1fr_1.1fr] lg:gap-12">
         {/* Left — Copy */}

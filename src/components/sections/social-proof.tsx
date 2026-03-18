@@ -98,7 +98,7 @@ const LOGOS = [
 
 export function SocialProof() {
   return (
-    <Section theme="dark" className="py-6">
+    <Section theme="dark" className="pt-0 pb-8">
       <p className="mb-6 text-center text-sm font-medium uppercase tracking-wider text-white/40">
         Trusted by teams at
       </p>
