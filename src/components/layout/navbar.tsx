@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/ui/logo";
 import { SIGNUP_URL } from "@/lib/constants";
 import { MobileNav } from "./mobile-nav";
 
@@ -18,9 +19,7 @@ export function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/5 bg-uply-dark/95 backdrop-blur-sm">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-xl font-extrabold text-uply-green">
-          uply
-        </Link>
+        <Logo size="sm" />
 
         <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (

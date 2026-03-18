@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "@/components/ui/logo";
 import { SITE_CONFIG } from "@/lib/constants";
 
 const footerColumns = [
@@ -29,9 +30,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="text-xl font-extrabold text-uply-green">
-              uply
-            </Link>
+            <Logo size="sm" />
             <p className="mt-3 text-sm text-white/40">
               {SITE_CONFIG.tagline}
             </p>
