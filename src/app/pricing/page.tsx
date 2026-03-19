@@ -18,7 +18,7 @@ import {
 export const metadata: Metadata = buildMetadata({
   title: "Pricing",
   description:
-    "Simple, transparent pricing for Uply. Start free, upgrade when you're ready. Free plan for up to 5 users, Pro at $1/user/month.",
+    "Simple, transparent pricing for Uply's Slack-based soft skills training. Free plan for up to 5 users. Pro at $1/user/month — free during early access.",
   path: "/pricing",
 });
 

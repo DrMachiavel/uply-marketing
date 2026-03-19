@@ -11,7 +11,7 @@ import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Features",
   description:
-    "Daily micro-lessons, weekly leaderboards, and team insights — all delivered inside Slack. See how Uply builds soft skills in 2 minutes a day.",
+    "Uply delivers daily soft skills micro-lessons, weekly leaderboards, and team analytics — all inside Slack. No extra apps, just 2 minutes a day.",
   path: "/features",
 });
 
@@ -216,6 +216,35 @@ export default function FeaturesPage() {
       {/* Topics grid */}
       <FadeIn>
         <TopicsGrid />
+      </FadeIn>
+
+      {/* Internal links — tools + pricing */}
+      <FadeIn>
+        <Section theme="green-wash">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-2xl font-bold text-uply-dark md:text-3xl">
+              See the impact for yourself
+            </h2>
+            <p className="mt-4 text-lg text-uply-gray">
+              Use our free{" "}
+              <a href="/tools/growth-calculator" className="font-medium text-uply-green-muted hover:underline">
+                Lost Growth Calculator
+              </a>{" "}
+              or{" "}
+              <a href="/tools/turnover-calculator" className="font-medium text-uply-green-muted hover:underline">
+                Turnover Cost Calculator
+              </a>{" "}
+              to see what poor soft skills are costing your team.
+            </p>
+            <p className="mt-3 text-base text-uply-gray">
+              Ready to start?{" "}
+              <a href="/pricing" className="font-medium text-uply-green-muted hover:underline">
+                See our pricing
+              </a>{" "}
+              — it&apos;s free to get started.
+            </p>
+          </div>
+        </Section>
       </FadeIn>
 
       {/* CTA */}

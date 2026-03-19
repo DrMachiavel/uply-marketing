@@ -16,16 +16,16 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Security",
   description:
-    "Learn how Uply protects your data. EU-hosted, encrypted, GDPR-compliant security practices for your Slack workspace.",
+    "How Uply keeps your Slack workspace data safe. EU-hosted, encrypted, GDPR-compliant. Minimal Slack permissions, no message access.",
   path: "/security",
 });
 
 const securityCards = [
   {
     icon: Server,
-    title: "EU-Only Data Hosting",
+    title: "Secure Data Hosting",
     description:
-      "All data is stored and processed exclusively within the European Union. Your data never leaves EU borders. We use GDPR-compliant infrastructure providers to ensure the highest standards of data sovereignty.",
+      "Your data is hosted on Replit (US-based) and processed via the Slack API. We use HTTPS encryption in transit, encrypt data at rest, and maintain strict access controls. Appropriate safeguards including Standard Contractual Clauses are in place for international data transfers in compliance with GDPR.",
   },
   {
     icon: Eye,

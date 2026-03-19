@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0a0f0a"/>
+  <path d="M34 52C34 52 34 104 70 104C106 104 106 52 106 52" stroke="#68ef3f" stroke-width="8" stroke-linecap="round" fill="none" transform="translate(40,30) scale(0.6)"/>
+  <circle cx="82" cy="53" r="5" fill="#68ef3f" transform="translate(40,30) scale(0.6)"/>
+  <text x="600" y="245" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="42" fill="white">
+    <tspan x="600" dy="0">Compliance Training for</tspan>
+    <tspan x="600" dy="55">Startups: How to Do It</tspan>
+    <tspan x="600" dy="55">Without the Boring</tspan>
+  </text>
+  <text x="600" y="580" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#68ef3f">uply.work</text>
+</svg>

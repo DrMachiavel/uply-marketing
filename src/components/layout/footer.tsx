@@ -7,6 +7,7 @@ const footerColumns = [
     title: "Product",
     links: [
       { href: "/features", label: "Features" },
+      { href: "/skills", label: "Skills" },
       { href: "/pricing", label: "Pricing" },
       { href: "/blog", label: "Blog" },
     ],
@@ -14,6 +15,7 @@ const footerColumns = [
   {
     title: "Tools",
     links: [
+      { href: "/tools/roi-calculator", label: "ROI Calculator" },
       { href: "/tools/turnover-calculator", label: "Turnover Cost Calculator" },
       { href: "/tools/growth-calculator", label: "Lost Growth Calculator" },
     ],
@@ -21,6 +23,7 @@ const footerColumns = [
   {
     title: "Support",
     links: [
+      { href: "/about", label: "About" },
       { href: "/help", label: "Help Center" },
       { href: `mailto:${SITE_CONFIG.email.support}`, label: "Contact" },
     ],

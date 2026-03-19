@@ -1,28 +1,28 @@
 import type { Metadata } from "next";
-import { GrowthCalculator } from "./calculator";
+import { ROICalculator } from "./calculator";
 import { CTASection } from "@/components/sections/cta-section";
 import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Lost Growth Calculator",
+  title: "Soft Skills Training ROI Calculator",
   description:
-    "Calculate how much poor soft skills cost your company in lost productivity and management gaps. Free tool by Uply.",
-  path: "/tools/growth-calculator",
+    "Calculate the return on investment from daily soft skills training. Based on research showing 250% ROI from soft skills programs.",
+  path: "/tools/roi-calculator",
 });
 
-export default function GrowthCalculatorPage() {
+export default function ROICalculatorPage() {
   return (
     <>
       <JsonLdScript
         data={breadcrumbJsonLd([
           { name: "Home", path: "/" },
-          { name: "Tools", path: "/tools/growth-calculator" },
-          { name: "Lost Growth Calculator", path: "/tools/growth-calculator" },
+          { name: "Tools", path: "/tools/roi-calculator" },
+          { name: "ROI Calculator", path: "/tools/roi-calculator" },
         ])}
       />
-      <GrowthCalculator />
+      <ROICalculator />
       <CTASection
-        headline="Ready to recover lost growth?"
+        headline="Ready to see real ROI?"
         subheadline="Join 200+ teams already using Uply to build stronger, more productive teams."
       />
     </>

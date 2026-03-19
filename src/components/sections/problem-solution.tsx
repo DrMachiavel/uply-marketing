@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Section } from "@/components/ui/section";
 import { Zap, LogIn, Rocket } from "lucide-react";
 
@@ -77,9 +78,12 @@ export function ProblemSolution() {
         ))}
       </div>
 
-      {/* Bottom line — social proof nudge */}
+      {/* Bottom line — social proof nudge + internal links */}
       <p className="mt-10 text-center text-sm text-white/30">
-        Most teams are fully running within their first day.
+        Most teams are fully running within their first day.{" "}
+        <Link href="/tools/growth-calculator" className="text-white/50 underline decoration-white/20 underline-offset-2 transition-colors hover:text-white/70">
+          See what you&apos;re missing
+        </Link>
       </p>
     </Section>
   );

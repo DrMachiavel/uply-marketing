@@ -6,7 +6,7 @@ import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Employee Turnover Cost Calculator",
   description:
-    "Calculate the true cost of employee turnover and see how much you could save with daily soft skills training in Slack. Free interactive tool by Uply.",
+    "Calculate the true cost of employee turnover and see how soft skills training in Slack can reduce it. Free tool by Uply.",
   path: "/tools/turnover-calculator",
 });
 

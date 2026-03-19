@@ -30,9 +30,9 @@ export default function BlogPage() {
             <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-6xl">
               Blog
             </h1>
-            <p className="mx-auto mt-4 max-w-2xl text-lg text-white/60">
-              Thoughts on leadership, soft skills, and building better teams
-            </p>
+            <h2 className="mx-auto mt-4 max-w-2xl text-lg font-normal text-white/60">
+              Insights on soft skills, microlearning, and building stronger teams with Slack
+            </h2>
           </div>
         </FadeIn>
       </Section>

@@ -176,17 +176,17 @@ export default function DataProcessingAgreementPage() {
             </p>
             <ul>
               <li>
-                <strong>Slack Technologies (Salesforce)</strong> &mdash; Delivery
-                of questions and collection of responses via the Slack API.
-                Data processed: Slack workspace information, user IDs, display
-                names, message interactions. Location: data processed in
-                accordance with Slack&apos;s data processing terms.
+                <strong>Replit, Inc.</strong> &mdash; Application hosting and
+                infrastructure. Data processed: all personal data described in
+                Section 2. Location: United States (with appropriate safeguards
+                in place, including Standard Contractual Clauses).
               </li>
               <li>
-                <strong>EU hosting provider</strong> &mdash; Infrastructure
-                hosting and data storage. All data is stored within the European
-                Union. Data processed: all personal data described in Section 2.
-                Location: European Union.
+                <strong>Slack Technologies (Salesforce, Inc.)</strong> &mdash;
+                Delivery of questions and collection of responses via the Slack
+                API. Data processed: Slack workspace information, user IDs,
+                display names, message interactions. Location: data processed
+                in accordance with Slack&apos;s data processing terms.
               </li>
             </ul>
 
@@ -248,16 +248,18 @@ export default function DataProcessingAgreementPage() {
             {/* 9. Data Transfers */}
             <h2>9. Data Transfers</h2>
             <p>
-              The Processor stores and processes all personal data exclusively
-              within the European Union. The Processor shall not transfer
-              personal data to any country or territory outside the European
-              Economic Area (EEA) without the prior written consent of the
-              Controller. In the event that a transfer outside the EEA becomes
-              necessary (for example, due to a change in sub-processors), the
-              Processor shall ensure that appropriate safeguards are in place in
-              accordance with Chapter V of the GDPR, such as Standard
-              Contractual Clauses approved by the European Commission, and shall
-              notify the Controller in advance.
+              Personal data may be transferred to and processed in the United
+              States through the Processor&apos;s sub-processors (Replit and
+              Slack). The Processor ensures that appropriate safeguards are in
+              place for all international data transfers in accordance with
+              Chapter V of the GDPR, including Standard Contractual Clauses
+              approved by the European Commission. The Processor shall notify
+              the Controller in advance of any changes to the locations where
+              personal data is processed. The Processor shall not transfer
+              personal data to any additional country or territory outside the
+              European Economic Area (EEA) without the prior written consent of
+              the Controller and without ensuring appropriate safeguards are in
+              place.
             </p>
 
             {/* 10. Audit Rights */}

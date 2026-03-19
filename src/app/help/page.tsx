@@ -9,7 +9,7 @@ import { HelpSearch } from "./help-search";
 export const metadata: Metadata = buildMetadata({
   title: "Help Center",
   description:
-    "Find answers to common questions about Uply — setup, daily lessons, scoring, billing, and privacy.",
+    "Find answers to common questions about Uply's Slack training app — setup, daily lessons, scoring, billing, privacy, and GDPR compliance.",
   path: "/help",
 });
 
@@ -78,7 +78,15 @@ export default function HelpCenterPage() {
                 className="font-medium text-uply-green-muted hover:underline"
               >
                 {SITE_CONFIG.email.support}
-              </a>
+              </a>{" "}
+              or check out our{" "}
+              <a
+                href="/blog"
+                className="font-medium text-uply-green-muted hover:underline"
+              >
+                blog
+              </a>{" "}
+              for tips on soft skills and team development.
             </p>
           </div>
         </FadeIn>

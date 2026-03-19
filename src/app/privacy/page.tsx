@@ -93,8 +93,11 @@ export default function PrivacyPolicyPage() {
             {/* 5. Data Storage & Security */}
             <h2>5. Data Storage &amp; Security</h2>
             <p>
-              All data is stored securely in data centers located within the
-              European Union. We implement industry-standard security measures to
+              Your data is hosted on Replit (United States) and processed via
+              the Slack API. Appropriate safeguards, including Standard
+              Contractual Clauses, are in place for international data
+              transfers in compliance with GDPR. We implement industry-standard
+              security measures to
               protect your data, including encryption of data in transit using
               TLS and encryption of data at rest. Access to personal data is
               restricted to authorized personnel who require it to operate and
