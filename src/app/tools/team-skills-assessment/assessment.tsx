@@ -5,7 +5,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { Section } from "@/components/ui/section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Badge } from "@/components/ui/badge";
-import { EmailCapture } from "@/components/ui/email-capture";
+
 import { SIGNUP_URL } from "@/lib/constants";
 
 // ---------------------------------------------------------------------------
@@ -826,16 +826,6 @@ export function TeamSkillsAssessment() {
           </div>
         </FadeIn>
 
-        {/* Email Capture */}
-        <FadeIn>
-          <div className="mt-8">
-            <EmailCapture
-              headline="Get your detailed report with personalized recommendations"
-              description="We'll send you an in-depth analysis of your team's soft skills with specific action items for each area."
-              source="team-skills-assessment"
-            />
-          </div>
-        </FadeIn>
 
         {/* CTA */}
         <FadeIn>

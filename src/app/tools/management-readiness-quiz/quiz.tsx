@@ -5,7 +5,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { Section } from "@/components/ui/section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Badge } from "@/components/ui/badge";
-import { EmailCapture } from "@/components/ui/email-capture";
+
 import { SIGNUP_URL } from "@/lib/constants";
 
 // ---------------------------------------------------------------------------
@@ -584,13 +584,6 @@ function ResultsScreen({
               </button>
             </div>
 
-            {/* Email capture */}
-            <EmailCapture
-              headline="Get your full leadership readiness report"
-              description="Personalized recommendations for each dimension, plus a 30-day action plan."
-              source="management-readiness-quiz"
-              className="mt-6"
-            />
 
             {/* CTA */}
             <div className="mt-6 rounded-2xl border border-white/10 bg-uply-dark-elevated p-6 text-center md:p-8">

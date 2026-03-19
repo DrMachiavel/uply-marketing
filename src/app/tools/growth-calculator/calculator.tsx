@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import { Section } from "@/components/ui/section";
 import { FadeIn } from "@/components/ui/fade-in";
-import { EmailCapture } from "@/components/ui/email-capture";
+
 import { SIGNUP_URL } from "@/lib/constants";
 
 function formatCurrency(value: number): string {
@@ -256,12 +256,6 @@ export function GrowthCalculator() {
                   </div>
                 </div>
 
-                <EmailCapture
-                  headline="Get your detailed growth report"
-                  description="We'll send you a personalized breakdown with actionable recommendations."
-                  source="growth-calculator"
-                  className="mt-6"
-                />
               </div>
             </div>
           </FadeIn>
