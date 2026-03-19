@@ -192,6 +192,25 @@ export function productJsonLd(offers: { name: string; price: string; description
   });
 }
 
+/** HowTo — for step-by-step guide articles */
+export function howToJsonLd(guide: {
+  name: string;
+  description: string;
+  steps: { name: string; text: string }[];
+}) {
+  return jsonLd({
+    "@type": "HowTo",
+    name: guide.name,
+    description: guide.description,
+    step: guide.steps.map((step, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  });
+}
+
 // ---------------------------------------------------------------------------
 // Helper — renders a JSON-LD script tag (use in page components)
 // ---------------------------------------------------------------------------

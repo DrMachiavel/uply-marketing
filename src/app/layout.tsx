@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { CookieBanner } from "@/components/ui/cookie-banner";
+import { Analytics } from "@/components/analytics";
 import { getBaseUrl, organizationJsonLd, softwareApplicationJsonLd, JsonLdScript } from "@/lib/seo";
 import { SITE_CONFIG } from "@/lib/constants";
 import "./globals.css";
@@ -41,6 +42,9 @@ export const metadata: Metadata = {
     title: "Uply — Soft skills training that lives in Slack",
     description: SITE_CONFIG.description,
   },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
   manifest: "/manifest.json",
   other: {
     "geo.region": "EU",
@@ -63,6 +67,7 @@ export default function RootLayout({
         <main className="pt-[73px]">{children}</main>
         <Footer />
         <CookieBanner />
+        <Analytics />
       </body>
     </html>
   );

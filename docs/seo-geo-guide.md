@@ -8,11 +8,20 @@ This guide is for AI agents and developers working on the Uply marketing site. I
 src/lib/seo.tsx          ← Centralized SEO utilities (metadata builder, JSON-LD generators)
 src/lib/constants.ts     ← Site config (name, URLs, social, email)
 src/lib/faq-data.ts      ← FAQ data (shared between client components and server JSON-LD)
-src/app/layout.tsx       ← Root metadata (title template, OG defaults, Twitter cards, hreflang, geo tags)
+src/components/analytics.tsx ← GA4 + Plausible analytics (env-var toggled)
+src/app/layout.tsx       ← Root metadata (title template, OG defaults, Twitter cards, hreflang, geo tags, analytics)
 src/app/robots.ts        ← Robots.txt (env-aware)
-src/app/sitemap.ts       ← Sitemap with priorities and change frequencies (env-aware)
+src/app/sitemap.ts       ← Sitemap with priorities and change frequencies (env-aware, auto-includes all routes)
 next.config.ts           ← Security headers (HSTS, X-Frame-Options, etc.)
 public/manifest.json     ← PWA manifest with theme colors and icons
+
+src/content/comparisons.ts   ← Comparison page data (Uply vs competitors)
+src/content/alternatives.ts  ← Alternatives page data
+src/content/audiences.ts     ← "For" audience page data
+src/content/use-cases.ts     ← Use-case page data
+src/content/skills.ts        ← Skill/topic page data
+src/content/glossary.ts      ← Glossary term data
+src/content/guides.ts        ← Long-form guide data
 ```
 
 ## Key Principle: Environment-Aware Base URL
@@ -119,6 +128,7 @@ All generators are in `src/lib/seo.tsx`. Each returns a JSON-LD object ready for
 | `breadcrumbJsonLd(items)` | Breadcrumb trail for any page | All pages with nav |
 | `faqJsonLd(items)` | FAQ accordion questions | Pricing page |
 | `productJsonLd(offers)` | Product with pricing tiers | Pricing page |
+| `howToJsonLd(guide)` | Step-by-step guides | Getting-started help articles |
 
 ### Adding a new JSON-LD generator
 
@@ -193,9 +203,11 @@ title: "Your Post Title"          # Required — used in metadata and JSON-LD
 date: "2026-03-18"                # Required — ISO format, used for publishedTime
 excerpt: "150 chars summary..."   # Required — used as meta description
 author: "Author Name"             # Required — used in Article schema
-image: "/images/blog/post.jpg"    # Optional — used in Article schema and OG image
+image: "/images/blog/post.svg"    # Required — OG image, used in Article schema and social previews
 ---
 ```
+
+**Blog OG images**: Every blog post should have a corresponding SVG in `public/images/blog/{slug}.svg`. These are 1200x630 branded cards with the Uply logo, post title in white text, and "uply.work" at the bottom on a dark (#0a0f0a) background. The `image` field in frontmatter references this path.
 
 ### Help Articles (MDX Frontmatter)
 
@@ -209,6 +221,64 @@ order: 1                          # Required — controls display order in categ
 
 The help article meta description is auto-generated from the first ~155 characters of content. Write the opening paragraph with search intent in mind.
 
+## Data-Driven Page Types
+
+The site uses data-driven dynamic routes for SEO landing pages. Each page type has a content data file in `src/content/` and a dynamic route in `src/app/`.
+
+### How to add a new comparison page
+
+1. Add a new entry to `src/content/comparisons.ts` following the `Comparison` interface
+2. The page is auto-generated at `/compare/{slug}` via `src/app/compare/[slug]/page.tsx`
+3. The sitemap auto-includes it (reads from the `comparisons` array)
+
+### How to add a new alternatives page
+
+1. Add a new entry to `src/content/alternatives.ts` following the `Alternative` interface
+2. Auto-generated at `/alternatives/{slug}`
+
+### How to add a new audience ("for") page
+
+1. Add a new entry to `src/content/audiences.ts` following the `Audience` interface
+2. Auto-generated at `/for/{slug}`
+
+### How to add a new use-case page
+
+1. Add a new entry to `src/content/use-cases.ts` following the `UseCase` interface
+2. Auto-generated at `/use-cases/{slug}`
+
+### How to add a new skill page
+
+1. Add a new entry to `src/content/skills.ts` following the `Skill` interface
+2. Auto-generated at `/skills/{slug}` and appears on `/skills` index
+
+### How to add a new glossary term
+
+1. Add a new entry to `src/content/glossary.ts` following the `GlossaryTerm` interface
+2. Auto-generated at `/glossary/{slug}` and appears on `/glossary` index
+
+### How to add a new guide
+
+1. Add a new entry to `src/content/guides.ts` following the `Guide` interface
+2. Auto-generated at `/guides/{slug}` and appears on `/guides` index
+
+**All new entries are automatically:**
+- Included in the sitemap with appropriate priorities
+- Pre-rendered at build time via `generateStaticParams`
+- Given full SEO metadata via `buildMetadata`
+- Given JSON-LD structured data (BreadcrumbList, FAQPage where applicable)
+
+## Analytics & Tracking
+
+See `docs/seo-tracking-setup.md` for detailed setup instructions.
+
+| Env Var | Purpose |
+|---------|---------|
+| `NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION` | Google Search Console domain verification |
+| `NEXT_PUBLIC_GA_ID` | Google Analytics 4 measurement ID (G-XXXXXXX) |
+| `NEXT_PUBLIC_PLAUSIBLE_DOMAIN` | Plausible Analytics domain (GDPR-friendly alternative to GA4) |
+
+The `<Analytics />` component in `src/components/analytics.tsx` renders the appropriate tracking scripts based on which env vars are set. If none are set, nothing renders.
+
 ## File Reference
 
 | File | Purpose |
@@ -216,8 +286,16 @@ The help article meta description is auto-generated from the first ~155 characte
 | `src/lib/seo.tsx` | All SEO utilities — `getBaseUrl`, `buildMetadata`, JSON-LD generators, `JsonLdScript` |
 | `src/lib/constants.ts` | `SITE_CONFIG` — name, URLs, social links, emails |
 | `src/lib/faq-data.ts` | FAQ items — shared between server (JSON-LD) and client (accordion) |
-| `src/app/layout.tsx` | Root metadata, Organization + SoftwareApplication JSON-LD, geo tags |
+| `src/components/analytics.tsx` | GA4 + Plausible analytics component (env-var toggled) |
+| `src/app/layout.tsx` | Root metadata, Organization + SoftwareApplication JSON-LD, geo tags, analytics |
 | `src/app/robots.ts` | Robots.txt generation |
-| `src/app/sitemap.ts` | Sitemap generation with priorities |
+| `src/app/sitemap.ts` | Sitemap generation with priorities (auto-includes all data-driven routes) |
 | `next.config.ts` | Security headers |
 | `public/manifest.json` | PWA manifest |
+| `src/content/comparisons.ts` | Comparison page data |
+| `src/content/alternatives.ts` | Alternatives page data |
+| `src/content/audiences.ts` | Audience "for" page data |
+| `src/content/use-cases.ts` | Use-case page data |
+| `src/content/skills.ts` | Skill/topic page data |
+| `src/content/glossary.ts` | Glossary term data |
+| `src/content/guides.ts` | Long-form guide data |
