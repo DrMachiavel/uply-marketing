@@ -5,6 +5,12 @@ import readingTime from "reading-time";
 
 const CONTENT_DIR = path.join(process.cwd(), "src/content/blog");
 
+function safePath(base: string, ...segments: string[]): string | null {
+  const resolved = path.resolve(base, ...segments);
+  if (!resolved.startsWith(path.resolve(base))) return null;
+  return resolved;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -48,9 +54,9 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export function getPostBySlug(slug: string): BlogPost | null {
-  const filePath = path.join(CONTENT_DIR, `${slug}.mdx`);
+  const filePath = safePath(CONTENT_DIR, `${slug}.mdx`);
 
-  if (!fs.existsSync(filePath)) {
+  if (!filePath || !fs.existsSync(filePath)) {
     return null;
   }
 

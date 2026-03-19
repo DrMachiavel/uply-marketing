@@ -6,6 +6,7 @@ import { BlogCard } from "@/components/ui/blog-card";
 import { CTASection } from "@/components/sections/cta-section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { getAllPosts, getPostBySlug, getRecentPosts } from "@/lib/mdx";
+import { mdxComponents } from "@/lib/mdx-components";
 import {
   buildMetadata,
   articleJsonLd,
@@ -41,6 +42,9 @@ export async function generateMetadata({
       publishedTime: post.date,
       authors: [post.author],
       section: "Soft Skills",
+      ...(post.image && {
+        images: [{ url: post.image, width: 1200, height: 630, alt: post.title }],
+      }),
     },
   });
 }
@@ -92,7 +96,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Content */}
       <Section theme="light">
         <article className="prose prose-lg prose-gray mx-auto max-w-3xl prose-headings:font-bold prose-headings:text-uply-dark prose-a:text-uply-green-muted prose-a:no-underline hover:prose-a:underline prose-strong:text-uply-dark">
-          <MDXRemote source={post.content} />
+          <MDXRemote source={post.content} components={mdxComponents} />
         </article>
 
         {/* Author bio */}

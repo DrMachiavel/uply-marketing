@@ -10,7 +10,36 @@ import {
   getHelpArticle,
   getCategoryName,
 } from "@/lib/help";
-import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
+import { buildMetadata, breadcrumbJsonLd, howToJsonLd, JsonLdScript } from "@/lib/seo";
+import { mdxComponents } from "@/lib/mdx-components";
+
+// HowTo structured data for getting-started guides
+const HOWTO_DATA: Record<string, { description: string; steps: { name: string; text: string }[] }> = {
+  "getting-started/install-slack": {
+    description: "Install the Uply soft skills training app in your Slack workspace in under a minute.",
+    steps: [
+      { name: "Visit uply.work", text: "Go to uply.work and click 'Get started free' to begin the installation." },
+      { name: "Authorize in Slack", text: "Choose your Slack workspace on the authorization page and approve the minimal permissions." },
+      { name: "Start using Uply", text: "Uply appears in your Slack sidebar under Apps. You'll receive a welcome message to choose your first topic." },
+    ],
+  },
+  "getting-started/invite-team": {
+    description: "Invite your team members to start using Uply for daily soft skills training in Slack.",
+    steps: [
+      { name: "Share the Uply app link", text: "Share the Uply app link in any Slack channel or mention @Uply where your team is present." },
+      { name: "Use the dashboard", text: "Invite people from the Uply dashboard by entering their Slack usernames or email addresses." },
+      { name: "Team members auto-setup", text: "Each person who interacts with Uply for the first time is automatically set up with their own account." },
+    ],
+  },
+  "getting-started/choose-topics": {
+    description: "Choose a soft skills topic for your Uply daily training in Slack.",
+    steps: [
+      { name: "Open Uply in Slack", text: "When you first interact with Uply, you'll be asked to choose a topic." },
+      { name: "Pick a topic", text: "Choose from topics like Leadership, Communication, Conflict Resolution, or Emotional Intelligence." },
+      { name: "Start learning", text: "Uply delivers daily questions tailored to your chosen topic. Switch topics anytime from the app home screen." },
+    ],
+  },
+};
 
 interface ArticlePageProps {
   params: Promise<{ category: string; slug: string }>;
@@ -64,8 +93,20 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     notFound();
   }
 
+  const howToKey = `${category}/${slug}`;
+  const howTo = HOWTO_DATA[howToKey];
+
   return (
     <>
+      {howTo && (
+        <JsonLdScript
+          data={howToJsonLd({
+            name: article.title,
+            description: howTo.description,
+            steps: howTo.steps,
+          })}
+        />
+      )}
       <JsonLdScript
         data={breadcrumbJsonLd([
           { name: "Home", path: "/" },
@@ -99,7 +140,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       <Section theme="light">
         <article className="prose prose-lg prose-gray mx-auto max-w-3xl prose-headings:font-bold prose-headings:text-uply-dark prose-a:text-uply-green-muted prose-a:no-underline hover:prose-a:underline prose-strong:text-uply-dark">
-          <MDXRemote source={article.content} />
+          <MDXRemote source={article.content} components={mdxComponents} />
         </article>
 
         {/* Was this helpful */}

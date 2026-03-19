@@ -4,6 +4,12 @@ import matter from "gray-matter";
 
 const HELP_DIR = path.join(process.cwd(), "src/content/help");
 
+function safePath(base: string, ...segments: string[]): string | null {
+  const resolved = path.resolve(base, ...segments);
+  if (!resolved.startsWith(path.resolve(base))) return null;
+  return resolved;
+}
+
 const CATEGORIES: Record<string, { name: string; description: string }> = {
   "getting-started": {
     name: "Getting Started",
@@ -59,9 +65,9 @@ export function getHelpCategories(): HelpCategory[] {
 }
 
 export function getArticlesByCategory(category: string): HelpArticle[] {
-  const categoryDir = path.join(HELP_DIR, category);
+  const categoryDir = safePath(HELP_DIR, category);
 
-  if (!fs.existsSync(categoryDir)) {
+  if (!categoryDir || !fs.existsSync(categoryDir)) {
     return [];
   }
 
@@ -89,9 +95,9 @@ export function getHelpArticle(
   category: string,
   slug: string
 ): HelpArticle | null {
-  const filePath = path.join(HELP_DIR, category, `${slug}.mdx`);
+  const filePath = safePath(HELP_DIR, category, `${slug}.mdx`);
 
-  if (!fs.existsSync(filePath)) {
+  if (!filePath || !fs.existsSync(filePath)) {
     return null;
   }
 
