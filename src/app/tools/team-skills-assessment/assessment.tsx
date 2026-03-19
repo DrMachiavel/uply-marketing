@@ -126,7 +126,7 @@ const QUESTIONS: Question[] = [
       { text: "Almost never", score: 1 },
       { text: "Only during formal recognition programs", score: 2 },
       { text: "Occasionally, but it feels forced", score: 3 },
-      { text: "Regularly and naturally — it's part of how the team operates", score: 4 },
+      { text: "Regularly and naturally -  it's part of how the team operates", score: 4 },
     ],
   },
   {
@@ -230,7 +230,7 @@ function getCategoryRecommendation(key: string, score: number): string {
       Advanced: "Mentor other teams on your communication practices",
     },
     l: {
-      Critical: "Start with leadership basics — define what ownership looks like on your team",
+      Critical: "Start with leadership basics -  define what ownership looks like on your team",
       Developing: "Create rotation programs so leadership is distributed, not concentrated",
       Competent: "Invest in coaching skills for your managers and emerging leaders",
       Advanced: "Focus on developing leaders who develop other leaders",
@@ -248,14 +248,14 @@ function getCategoryRecommendation(key: string, score: number): string {
       Advanced: "Build peer mediation capabilities within the team",
     },
     f: {
-      Critical: "Start small — introduce a weekly wins channel or kudos ritual",
+      Critical: "Start small -  introduce a weekly wins channel or kudos ritual",
       Developing: "Train managers on the SBI (Situation-Behavior-Impact) feedback model",
       Competent: "Create regular retrospectives focused on learning, not blame",
       Advanced: "Help normalize continuous feedback as a daily practice, not an event",
     },
     a: {
       Critical: "Build change resilience by involving the team in decision-making early",
-      Developing: "Create learning time — dedicate hours each week to skill development",
+      Developing: "Create learning time -  dedicate hours each week to skill development",
       Competent: "Encourage experimentation with low-stakes pilot projects",
       Advanced: "Channel your adaptability into mentoring other teams through transitions",
     },

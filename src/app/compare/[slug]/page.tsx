@@ -246,7 +246,7 @@ export default async function ComparisonPage({ params }: PageProps) {
 
       {/* CTA */}
       <FadeIn>
-        <CTASection headline="Try Uply free — no credit card required" />
+        <CTASection headline="Try Uply free -  no credit card required" />
       </FadeIn>
     </>
   );

@@ -95,7 +95,7 @@ export function SlackMockup({
 
             {/* Bot message */}
             <div className="flex gap-3">
-              {/* Avatar — Uply logo */}
+              {/* Avatar -  Uply logo */}
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg overflow-hidden">
                 <svg width="36" height="36" viewBox="0 0 140 140" fill="none">
                   <rect width="140" height="140" rx="28" fill="#68ef3f"/>

@@ -23,7 +23,7 @@ const beliefs = [
   {
     title: "Meet people where they are",
     description:
-      "Your team already lives in Slack. No new app to install, no extra login to remember — just soft skills training that fits naturally into the workday.",
+      "Your team already lives in Slack. No new app to install, no extra login to remember -  just soft skills training that fits naturally into the workday.",
   },
   {
     title: "Free should mean free",
@@ -52,7 +52,7 @@ export default function AboutPage() {
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/60">
               We believe great teams aren&apos;t built in annual workshops.
-              They&apos;re built in the small moments — one conversation, one
+              They&apos;re built in the small moments -  one conversation, one
               decision, one micro-lesson at a time.
             </p>
           </div>
@@ -76,7 +76,7 @@ export default function AboutPage() {
               </p>
               <p>
                 Uply was born from a simple idea: what if soft skills training
-                worked like the best products — short, daily, and embedded in
+                worked like the best products -  short, daily, and embedded in
                 the tools you already use? Instead of pulling people out of work
                 for a seminar, we deliver one scenario-based question per day,
                 right in Slack. Two minutes. That&apos;s it.
@@ -84,7 +84,7 @@ export default function AboutPage() {
               <p>
                 We&apos;re based in Lille, France, and we&apos;re building Uply
                 because we believe every growing team deserves access to
-                meaningful skill development — not just companies that can
+                meaningful skill development -  not just companies that can
                 afford five-figure training budgets.
               </p>
             </div>
@@ -166,7 +166,7 @@ export default function AboutPage() {
               Get in Touch
             </h2>
             <p className="mt-4 text-lg text-uply-gray">
-              We&apos;d love to hear from you — whether you have a question,
+              We&apos;d love to hear from you -  whether you have a question,
               feedback, or just want to say hi.
             </p>
             <div className="mt-8 space-y-4">

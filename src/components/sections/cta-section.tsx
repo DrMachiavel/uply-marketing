@@ -37,7 +37,7 @@ export function CTASection({
             className="inline-flex items-center gap-2.5 rounded-lg bg-uply-green px-7 py-3.5 text-sm font-semibold text-uply-dark transition-all duration-200 hover:brightness-110 hover:shadow-[0_0_24px_-4px_rgba(104,239,63,0.4)]"
           >
             <SlackIcon className="h-5 w-5" />
-            Add to Slack — It&apos;s Free
+            Add to Slack -  It&apos;s Free
           </a>
         </div>
       </div>

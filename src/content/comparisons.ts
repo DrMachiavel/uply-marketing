@@ -23,12 +23,12 @@ export const comparisons: Comparison[] = [
     competitor: "Donut",
     competitorDescription:
       "Donut connects teammates for virtual watercooler chats, introductions, and social bonding inside Slack.",
-    title: "Uply vs Donut — Slack Soft Skills Training Compared",
+    title: "Uply vs Donut -  Slack Soft Skills Training Compared",
     description:
       "Compare Uply and Donut for Slack-based team development. See how daily micro-lessons stack up against watercooler introductions for building skills.",
     heroHeadline: "Uply vs Donut",
     heroCopy:
-      "Donut is great for introductions and social bonding. Uply is built for measurable soft skills growth. Different goals — here's how they compare.",
+      "Donut is great for introductions and social bonding. Uply is built for measurable soft skills growth. Different goals -  here's how they compare.",
     bestFor: {
       uply: "Teams that want structured, daily soft skills training delivered in Slack with measurable progress and leaderboards.",
       competitor:
@@ -80,14 +80,14 @@ export const comparisons: Comparison[] = [
     competitor: "EdApp (SC Training)",
     competitorDescription:
       "EdApp (now SC Training) is a full learning management system with a course authoring tool, gamification, and mobile delivery.",
-    title: "Uply vs EdApp — Slack Microlearning vs Full LMS",
+    title: "Uply vs EdApp -  Slack Microlearning vs Full LMS",
     description:
       "Compare Uply and EdApp (SC Training) for team training. See how Slack-native micro-lessons compare to a full LMS with course authoring tools.",
     heroHeadline: "Uply vs EdApp (SC Training)",
     heroCopy:
       "EdApp is a powerful LMS with course authoring. Uply is Slack-native microlearning with zero setup. Here's how they compare for soft skills training.",
     bestFor: {
-      uply: "Teams that want frictionless soft skills training inside Slack — no authoring, no app downloads, just daily practice.",
+      uply: "Teams that want frictionless soft skills training inside Slack -  no authoring, no app downloads, just daily practice.",
       competitor:
         "Organizations that need a full LMS with custom course creation, compliance training, and mobile delivery across multiple topics.",
     },
@@ -137,12 +137,12 @@ export const comparisons: Comparison[] = [
         question:
           "Is Uply suitable for compliance or technical training?",
         answer:
-          "Uply is designed specifically for soft skills — leadership, communication, feedback, collaboration. For compliance or technical training, a full LMS like EdApp may be a better fit.",
+          "Uply is designed specifically for soft skills -  leadership, communication, feedback, collaboration. For compliance or technical training, a full LMS like EdApp may be a better fit.",
       },
       {
         question: "Which is easier to set up?",
         answer:
-          "Uply can be set up in under 5 minutes — install the Slack app, pick topics, and invite your team. EdApp requires more setup time for course creation and configuration, though its template library helps.",
+          "Uply can be set up in under 5 minutes -  install the Slack app, pick topics, and invite your team. EdApp requires more setup time for course creation and configuration, though its template library helps.",
       },
     ],
   },
@@ -151,12 +151,12 @@ export const comparisons: Comparison[] = [
     competitor: "7taps",
     competitorDescription:
       "7taps is a microlearning creation platform that lets you build and share bite-sized training content quickly via links or QR codes.",
-    title: "Uply vs 7taps — Complete Solution vs Creation Tool",
+    title: "Uply vs 7taps -  Complete Solution vs Creation Tool",
     description:
       "Compare Uply and 7taps for microlearning. See how a complete Slack-native solution compares to a microlearning content creation platform.",
     heroHeadline: "Uply vs 7taps",
     heroCopy:
-      "7taps helps you create microlearning content. Uply delivers a complete soft skills program inside Slack — no content creation required.",
+      "7taps helps you create microlearning content. Uply delivers a complete soft skills program inside Slack -  no content creation required.",
     bestFor: {
       uply: "Teams that want a turnkey soft skills training solution inside Slack with no content creation or management overhead.",
       competitor:
@@ -195,7 +195,7 @@ export const comparisons: Comparison[] = [
         "Free plan with limited features. Paid plans start at $99/month.",
     },
     verdict:
-      "7taps is a strong tool for L&D teams that need to create custom microlearning content. Uply takes a different approach — it provides ready-made soft skills content delivered directly in Slack with built-in leaderboards and analytics. If you want soft skills training without the authoring overhead, Uply is the faster path.",
+      "7taps is a strong tool for L&D teams that need to create custom microlearning content. Uply takes a different approach -  it provides ready-made soft skills content delivered directly in Slack with built-in leaderboards and analytics. If you want soft skills training without the authoring overhead, Uply is the faster path.",
     faqs: [
       {
         question: "Can I create my own content with Uply?",
@@ -211,7 +211,7 @@ export const comparisons: Comparison[] = [
       {
         question: "Which tool is better for soft skills specifically?",
         answer:
-          "Uply is purpose-built for soft skills with scenario-based questions designed around real workplace situations. 7taps is content-agnostic — it's a creation tool that can be used for any topic, including soft skills, but you need to provide the content.",
+          "Uply is purpose-built for soft skills with scenario-based questions designed around real workplace situations. 7taps is content-agnostic -  it's a creation tool that can be used for any topic, including soft skills, but you need to provide the content.",
       },
     ],
   },
@@ -220,14 +220,14 @@ export const comparisons: Comparison[] = [
     competitor: "Trivie",
     competitorDescription:
       "Trivie uses AI-powered quizzes and spaced repetition to help employees retain knowledge from training programs.",
-    title: "Uply vs Trivie — Slack Soft Skills vs AI Quiz Platform",
+    title: "Uply vs Trivie -  Slack Soft Skills vs AI Quiz Platform",
     description:
       "Compare Uply and Trivie for team training. See how Slack-native soft skills micro-lessons compare to AI-powered knowledge retention quizzes.",
     heroHeadline: "Uply vs Trivie",
     heroCopy:
       "Trivie reinforces existing training with AI quizzes. Uply delivers original soft skills content in Slack. Here's how to choose between them.",
     bestFor: {
-      uply: "Teams that need a standalone soft skills program inside Slack — no existing training materials required.",
+      uply: "Teams that need a standalone soft skills program inside Slack -  no existing training materials required.",
       competitor:
         "Organizations that want to reinforce knowledge from existing training programs using AI-powered spaced repetition quizzes.",
     },
@@ -260,7 +260,7 @@ export const comparisons: Comparison[] = [
         "Custom pricing based on team size. No free plan.",
     },
     verdict:
-      "Trivie excels at reinforcing knowledge from training programs you've already built. Uply is a standalone soft skills solution — you don't need existing content or a separate LMS. If soft skills are your priority and you want something that works out of the box in Slack, Uply is the simpler choice.",
+      "Trivie excels at reinforcing knowledge from training programs you've already built. Uply is a standalone soft skills solution -  you don't need existing content or a separate LMS. If soft skills are your priority and you want something that works out of the box in Slack, Uply is the simpler choice.",
     faqs: [
       {
         question:
@@ -286,7 +286,7 @@ export const comparisons: Comparison[] = [
     competitor: "TalentLMS",
     competitorDescription:
       "TalentLMS is a cloud-based learning management system for building, managing, and delivering online training courses.",
-    title: "Uply vs TalentLMS — Slack Microlearning vs Full LMS",
+    title: "Uply vs TalentLMS -  Slack Microlearning vs Full LMS",
     description:
       "Compare Uply and TalentLMS for team training. See how lightweight Slack-native micro-lessons compare to a full learning management system.",
     heroHeadline: "Uply vs TalentLMS",
@@ -330,7 +330,7 @@ export const comparisons: Comparison[] = [
         "Free for up to 5 users. Paid plans start at $69/month.",
     },
     verdict:
-      "TalentLMS is a proven LMS for organizations that need certifications, compliance tracking, and custom course libraries. Uply is designed for teams that want soft skills training without the LMS overhead — it's Slack-native, takes 2 minutes a day, and requires zero content creation. For focused soft skills development, Uply is the leaner choice.",
+      "TalentLMS is a proven LMS for organizations that need certifications, compliance tracking, and custom course libraries. Uply is designed for teams that want soft skills training without the LMS overhead -  it's Slack-native, takes 2 minutes a day, and requires zero content creation. For focused soft skills development, Uply is the leaner choice.",
     faqs: [
       {
         question:
@@ -342,7 +342,7 @@ export const comparisons: Comparison[] = [
         question:
           "Is Uply too simple for large organizations?",
         answer:
-          "Uply is designed to be simple on purpose — complexity kills adoption. It works well for teams of any size that want consistent daily soft skills practice. For broader training needs (compliance, technical, onboarding), a full LMS like TalentLMS is more appropriate.",
+          "Uply is designed to be simple on purpose -  complexity kills adoption. It works well for teams of any size that want consistent daily soft skills practice. For broader training needs (compliance, technical, onboarding), a full LMS like TalentLMS is more appropriate.",
       },
       {
         question:

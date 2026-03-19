@@ -78,8 +78,8 @@ export async function generateMetadata({
       : plainText;
 
   return buildMetadata({
-    title: `${article.title} — Help Center`,
-    description: description || `${article.title} — Uply Help Center`,
+    title: `${article.title} -  Help Center`,
+    description: description || `${article.title} -  Uply Help Center`,
     path: `/help/${category}/${slug}`,
   });
 }

@@ -153,13 +153,13 @@ export default function PrivacyPolicyPage() {
               categorize cookies as follows:
             </p>
             <p>
-              <strong>Essential cookies</strong> — These cookies are strictly
+              <strong>Essential cookies</strong> -  These cookies are strictly
               necessary for the website to function (e.g., session management,
               security tokens, cookie consent preferences). They cannot be
               disabled and do not require your consent under EU regulations.
             </p>
             <p>
-              <strong>Analytics cookies</strong> — We may use anonymous,
+              <strong>Analytics cookies</strong> -  We may use anonymous,
               privacy-friendly analytics to understand how visitors use our
               website (e.g., pages visited, time on site). These cookies do not
               track you across other websites, do not collect personally

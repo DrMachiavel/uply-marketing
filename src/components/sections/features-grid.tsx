@@ -274,7 +274,7 @@ function TeamInsightsVisual() {
 }
 
 /* ==========================================================================
-   Feature Section — alternating text/visual layout
+   Feature Section -  alternating text/visual layout
    ========================================================================== */
 
 interface FeatureSectionProps {
@@ -344,7 +344,7 @@ export function FeaturesGrid() {
       <FeatureSection
         badge="Weekly leaderboard"
         title="Friendly competition that drives engagement."
-        description="Every week, Uply ranks your team based on participation and answer quality. Top performers get recognized — and everyone gets motivated."
+        description="Every week, Uply ranks your team based on participation and answer quality. Top performers get recognized -  and everyone gets motivated."
         bullets={[
           "Automatic weekly rankings posted in Slack",
           "Celebrates consistency, not just correctness",
@@ -362,7 +362,7 @@ export function FeaturesGrid() {
         bullets={[
           "Leadership, collaboration, feedback, and more",
           "New topics added every month",
-          "Free plan includes 1 topic — Pro unlocks all",
+          "Free plan includes 1 topic -  Pro unlocks all",
         ]}
         visual={<SkillTopicsVisual />}
         theme="light"

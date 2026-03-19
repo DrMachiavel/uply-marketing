@@ -9,7 +9,7 @@ import { HelpSearch } from "./help-search";
 export const metadata: Metadata = buildMetadata({
   title: "Help Center",
   description:
-    "Find answers to common questions about Uply's Slack training app — setup, daily lessons, scoring, billing, privacy, and GDPR compliance.",
+    "Find answers to common questions about Uply's Slack training app -  setup, daily lessons, scoring, billing, privacy, and GDPR compliance.",
   path: "/help",
 });
 

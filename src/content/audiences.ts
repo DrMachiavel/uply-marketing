@@ -19,10 +19,10 @@ export const audiences: Audience[] = [
     name: "Startups",
     title: "Soft Skills Training for Startups",
     description:
-      "Free soft skills training that fits startup life. 2-minute daily lessons in Slack build leadership, communication, and culture — no L&D budget needed.",
-    heroHeadline: "Build culture from day one — without an L&D budget",
+      "Free soft skills training that fits startup life. 2-minute daily lessons in Slack build leadership, communication, and culture -  no L&D budget needed.",
+    heroHeadline: "Build culture from day one -  without an L&D budget",
     heroCopy:
-      "Startups move fast, but culture can't be an afterthought. Uply delivers daily soft skills practice right in Slack — free, two minutes a day, and zero meetings required.",
+      "Startups move fast, but culture can't be an afterthought. Uply delivers daily soft skills practice right in Slack -  free, two minutes a day, and zero meetings required.",
     painPoints: [
       {
         title: "No L&D budget",
@@ -44,12 +44,12 @@ export const audiences: Audience[] = [
       {
         title: "Free to get started",
         description:
-          "Uply's free plan gives you daily soft skills training for up to 5 people. No credit card, no contracts — just add to Slack and go.",
+          "Uply's free plan gives you daily soft skills training for up to 5 people. No credit card, no contracts -  just add to Slack and go.",
       },
       {
         title: "2 minutes a day, right in Slack",
         description:
-          "One scenario-based question each morning. Your team answers between standups and code reviews — no calendar blocks, no context switching.",
+          "One scenario-based question each morning. Your team answers between standups and code reviews -  no calendar blocks, no context switching.",
       },
       {
         title: "Culture building on autopilot",
@@ -68,7 +68,7 @@ export const audiences: Audience[] = [
       {
         question: "Is Uply really free for startups?",
         answer:
-          "Yes. The free plan includes up to 5 users and 1 skill topic — perfect for early-stage teams. You can upgrade as you grow, but there's no pressure and no trial period.",
+          "Yes. The free plan includes up to 5 users and 1 skill topic -  perfect for early-stage teams. You can upgrade as you grow, but there's no pressure and no trial period.",
       },
       {
         question: "How much time does it take per day?",
@@ -99,10 +99,10 @@ export const audiences: Audience[] = [
     name: "Remote Teams",
     title: "Soft Skills Training for Remote Teams",
     description:
-      "Async soft skills training built for distributed teams. Daily Slack lessons bridge communication gaps and build connection — no meetings required.",
+      "Async soft skills training built for distributed teams. Daily Slack lessons bridge communication gaps and build connection -  no meetings required.",
     heroHeadline: "Close the communication gap in distributed teams",
     heroCopy:
-      "Remote work is great for focus, but tough on communication. Uply delivers async soft skills practice in Slack — daily touchpoints that bridge time zones and build real connection.",
+      "Remote work is great for focus, but tough on communication. Uply delivers async soft skills practice in Slack -  daily touchpoints that bridge time zones and build real connection.",
     painPoints: [
       {
         title: "Communication gaps multiply remotely",
@@ -117,7 +117,7 @@ export const audiences: Audience[] = [
       {
         title: "Async collaboration is a skill nobody teaches",
         description:
-          "Writing clear messages, giving feedback in docs, and navigating conflict without face-to-face cues are real skills — but traditional training ignores them.",
+          "Writing clear messages, giving feedback in docs, and navigating conflict without face-to-face cues are real skills -  but traditional training ignores them.",
       },
     ],
     solutions: [
@@ -129,7 +129,7 @@ export const audiences: Audience[] = [
       {
         title: "Daily touchpoints that create connection",
         description:
-          "When the whole team answers the same question, it sparks conversations. People discover how teammates think — even across continents.",
+          "When the whole team answers the same question, it sparks conversations. People discover how teammates think -  even across continents.",
       },
       {
         title: "Leaderboards build shared experience",
@@ -140,7 +140,7 @@ export const audiences: Audience[] = [
     stat: { value: "2 min", label: "daily time commitment" },
     testimonial: {
       quote:
-        "Our team spans 4 time zones. Uply is the one thing everyone does together every day — it's become our async watercooler.",
+        "Our team spans 4 time zones. Uply is the one thing everyone does together every day -  it's become our async watercooler.",
       name: "Maria S.",
       role: "VP of Engineering, distributed team",
     },
@@ -148,7 +148,7 @@ export const audiences: Audience[] = [
       {
         question: "Does it work across time zones?",
         answer:
-          "Yes. Questions are delivered in Slack and each person answers whenever it fits their schedule. There's no time limit within the day — everyone participates async.",
+          "Yes. Questions are delivered in Slack and each person answers whenever it fits their schedule. There's no time limit within the day -  everyone participates async.",
       },
       {
         question: "How does it help with remote communication?",
@@ -158,7 +158,7 @@ export const audiences: Audience[] = [
       {
         question: "Can I see how my distributed team is doing?",
         answer:
-          "Yes. The analytics dashboard shows participation rates, skill progress, and engagement trends across your entire team — regardless of where they sit.",
+          "Yes. The analytics dashboard shows participation rates, skill progress, and engagement trends across your entire team -  regardless of where they sit.",
       },
     ],
     relatedLinks: [
@@ -174,15 +174,15 @@ export const audiences: Audience[] = [
     name: "Engineering Teams",
     title: "Soft Skills for Engineering Teams",
     description:
-      "Help engineers communicate better, give constructive code reviews, and transition to leadership. Daily Slack micro-lessons — no meetings, no fluff.",
+      "Help engineers communicate better, give constructive code reviews, and transition to leadership. Daily Slack micro-lessons -  no meetings, no fluff.",
     heroHeadline: "Better code reviews start with better communication",
     heroCopy:
-      "Engineering teams ship great code but often struggle with feedback, cross-team communication, and the IC-to-manager transition. Uply builds those skills daily in Slack — where engineers already live.",
+      "Engineering teams ship great code but often struggle with feedback, cross-team communication, and the IC-to-manager transition. Uply builds those skills daily in Slack -  where engineers already live.",
     painPoints: [
       {
         title: "The IC-to-manager gap",
         description:
-          "Your best engineer gets promoted to lead and suddenly needs to give feedback, run 1:1s, and navigate team dynamics — with zero training for any of it.",
+          "Your best engineer gets promoted to lead and suddenly needs to give feedback, run 1:1s, and navigate team dynamics -  with zero training for any of it.",
       },
       {
         title: "Code review tone problems",
@@ -204,7 +204,7 @@ export const audiences: Audience[] = [
       {
         title: "No meetings, no interruptions",
         description:
-          "Engineers hate unnecessary meetings. Uply delivers one question in Slack each morning — answer between PRs, not in a conference room.",
+          "Engineers hate unnecessary meetings. Uply delivers one question in Slack each morning -  answer between PRs, not in a conference room.",
       },
       {
         title: "Leadership skills before the promotion",
@@ -212,7 +212,7 @@ export const audiences: Audience[] = [
           "Build feedback, delegation, and communication skills before engineers need them. When the promotion comes, they're ready.",
       },
     ],
-    stat: { value: "2 min", label: "daily — between PRs" },
+    stat: { value: "2 min", label: "daily -  between PRs" },
     testimonial: {
       quote:
         "Our code review culture completely changed. Engineers started thinking about how they phrase feedback, not just what the feedback is.",
@@ -223,7 +223,7 @@ export const audiences: Audience[] = [
       {
         question: "Will engineers actually engage with soft skills training?",
         answer:
-          "Yes. Uply's format — short, scenario-based, in Slack — resonates with engineers. It feels like a puzzle, not a lecture. We see 94% weekly completion rates.",
+          "Yes. Uply's format -  short, scenario-based, in Slack -  resonates with engineers. It feels like a puzzle, not a lecture. We see 94% weekly completion rates.",
       },
       {
         question: "Are the scenarios relevant to engineering work?",
@@ -250,7 +250,7 @@ export const audiences: Audience[] = [
     title: "Soft Skills Training for People Ops & HR",
     description:
       "Prove L&D ROI with 94% completion rates. Uply delivers measurable soft skills growth through daily Slack micro-lessons your people will actually complete.",
-    heroHeadline: "L&D that people actually complete — and you can prove it",
+    heroHeadline: "L&D that people actually complete -  and you can prove it",
     heroCopy:
       "Traditional training has a completion problem. Uply delivers daily micro-lessons in Slack with 94% weekly completion rates and analytics that show measurable skill growth.",
     painPoints: [
@@ -267,7 +267,7 @@ export const audiences: Audience[] = [
       {
         title: "Compliance needs without the boring format",
         description:
-          "Some soft skills training is required, but the traditional format — hour-long videos with quizzes — ensures nobody retains anything.",
+          "Some soft skills training is required, but the traditional format -  hour-long videos with quizzes -  ensures nobody retains anything.",
       },
     ],
     solutions: [
@@ -329,8 +329,8 @@ export const audiences: Audience[] = [
     name: "New Managers",
     title: "Soft Skills Training for New Managers",
     description:
-      "Daily leadership practice in Slack for newly promoted managers. Build confidence in feedback, delegation, and team communication — 2 minutes a day.",
-    heroHeadline: "From IC to leader — without the sink-or-swim",
+      "Daily leadership practice in Slack for newly promoted managers. Build confidence in feedback, delegation, and team communication -  2 minutes a day.",
+    heroHeadline: "From IC to leader -  without the sink-or-swim",
     heroCopy:
       "Most new managers are promoted for technical skills and left to figure out leadership on their own. Uply builds feedback, delegation, and communication muscles daily in Slack.",
     painPoints: [
@@ -383,7 +383,7 @@ export const audiences: Audience[] = [
       {
         question: "How quickly will I see improvement?",
         answer:
-          "Most managers notice a shift within 2-3 weeks. The daily scenarios build pattern recognition — you start seeing situations differently and responding more intentionally.",
+          "Most managers notice a shift within 2-3 weeks. The daily scenarios build pattern recognition -  you start seeing situations differently and responding more intentionally.",
       },
       {
         question: "Can my manager see my progress?",
@@ -439,10 +439,10 @@ export const audiences: Audience[] = [
       {
         title: "Leaderboard drives competitive engagement",
         description:
-          "Sales teams are naturally competitive. Uply's weekly leaderboard taps into that — driving participation rates that traditional training can only dream of.",
+          "Sales teams are naturally competitive. Uply's weekly leaderboard taps into that -  driving participation rates that traditional training can only dream of.",
       },
     ],
-    stat: { value: "2 min", label: "daily — between calls" },
+    stat: { value: "2 min", label: "daily -  between calls" },
     testimonial: {
       quote:
         "My reps started asking better discovery questions within two weeks. The daily scenarios taught them to listen first and pitch second.",
@@ -453,7 +453,7 @@ export const audiences: Audience[] = [
       {
         question: "How is this different from sales coaching?",
         answer:
-          "Uply complements coaching by building the underlying soft skills — empathy, active listening, communication — that make coaching stick. It's daily practice, not a one-time session.",
+          "Uply complements coaching by building the underlying soft skills -  empathy, active listening, communication -  that make coaching stick. It's daily practice, not a one-time session.",
       },
       {
         question: "Are the scenarios sales-specific?",

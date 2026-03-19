@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getBaseUrl();
   const now = new Date();
 
-  // Blog posts — use actual publication dates
+  // Blog posts -  use actual publication dates
   const posts = getAllPosts();
   const blogUrls = posts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
@@ -23,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Help articles — grouped by category
+  // Help articles -  grouped by category
   const categories = getHelpCategories();
   const helpUrls = categories.flatMap((cat) => {
     const articles = getArticlesByCategory(cat.slug);
@@ -44,7 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   return [
-    // Core pages — highest priority
+    // Core pages -  highest priority
     { url: baseUrl, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     { url: `${baseUrl}/features`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/pricing`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
@@ -57,12 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/glossary`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/guides`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
-    // Tools — high-value landing pages
+    // Tools -  high-value landing pages
     { url: `${baseUrl}/tools/growth-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/tools/turnover-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/tools/roi-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
-    // Comparison pages — high conversion intent
+    // Comparison pages -  high conversion intent
     ...comparisons.map((c) => ({
       url: `${baseUrl}/compare/${c.slug}`,
       lastModified: now,
@@ -70,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
 
-    // Alternatives pages — high conversion intent
+    // Alternatives pages -  high conversion intent
     ...alternatives.map((a) => ({
       url: `${baseUrl}/alternatives/${a.slug}`,
       lastModified: now,

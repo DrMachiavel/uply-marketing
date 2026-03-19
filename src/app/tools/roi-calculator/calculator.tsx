@@ -115,7 +115,7 @@ export function ROICalculator() {
     const uplyCostPerUser = 12; // $1/user/month = $12/year
     const uplyAnnualCost = teamSize * uplyCostPerUser;
 
-    // 2% productivity improvement — conservative estimate from MIT Sloan research
+    // 2% productivity improvement -  conservative estimate from MIT Sloan research
     const productivityGain = teamSize * avgSalary * 0.02;
 
     // 15% of salary = average turnover replacement cost
@@ -293,13 +293,13 @@ export function ROICalculator() {
                 <strong className="text-white/80">Productivity gain (2%):</strong>{" "}
                 MIT Sloan research shows soft skills training delivers up to 250%
                 ROI, primarily through productivity improvements. We use a
-                conservative 2% estimate — well below the research ceiling.
+                conservative 2% estimate -  well below the research ceiling.
               </p>
               <p>
                 <strong className="text-white/80">Turnover savings:</strong>{" "}
                 Gallup data shows that engaged employees are 59% less likely to
                 look for a new job. We model a 10% reduction in turnover, with
-                replacement costs at 15% of annual salary — again, a conservative
+                replacement costs at 15% of annual salary -  again, a conservative
                 baseline.
               </p>
               <p>

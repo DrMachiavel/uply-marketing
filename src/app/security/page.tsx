@@ -82,7 +82,7 @@ export default function SecurityPage() {
               Security at Uply
             </h1>
             <p className="mt-6 text-lg text-uply-gray md:text-xl">
-              Protecting your data is not an afterthought — it is foundational
+              Protecting your data is not an afterthought -  it is foundational
               to everything we build. Uply is designed from the ground up with
               security, privacy, and compliance at its core.
             </p>

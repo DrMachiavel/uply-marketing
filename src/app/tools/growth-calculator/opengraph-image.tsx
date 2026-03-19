@@ -2,7 +2,7 @@ import { generateOgImage, OG_SIZE, OG_CONTENT_TYPE } from "@/lib/og-image";
 
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
-export const alt = "Lost Growth Calculator — See how much poor soft skills cost your team";
+export const alt = "Lost Growth Calculator -  See how much poor soft skills cost your team";
 
 export default function Image() {
   return generateOgImage({

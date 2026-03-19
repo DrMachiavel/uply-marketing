@@ -11,7 +11,7 @@ const STEPS = [
     number: "02",
     title: "Daily micro-lessons",
     description:
-      "Every morning, Uply posts a situational question. Team members pick their answer — it takes less than 2 minutes.",
+      "Every morning, Uply posts a situational question. Team members pick their answer -  it takes less than 2 minutes.",
   },
   {
     number: "03",

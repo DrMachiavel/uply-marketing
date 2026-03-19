@@ -17,7 +17,7 @@ const baseUrl = getBaseUrl();
 
 export const metadata: Metadata = {
   title: {
-    default: "Uply — Soft skills training that lives in Slack",
+    default: "Uply -  Soft skills training that lives in Slack",
     template: "%s | Uply",
   },
   description: SITE_CONFIG.description,
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: SITE_CONFIG.name,
-    title: "Uply — Soft skills training that lives in Slack",
+    title: "Uply -  Soft skills training that lives in Slack",
     description: SITE_CONFIG.description,
     url: baseUrl,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Uply — Soft skills training that lives in Slack",
+    title: "Uply -  Soft skills training that lives in Slack",
     description: SITE_CONFIG.description,
   },
   verification: {

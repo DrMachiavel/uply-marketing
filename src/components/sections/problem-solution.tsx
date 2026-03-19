@@ -7,7 +7,7 @@ const steps = [
     icon: Zap,
     number: "01",
     title: "Install in Slack",
-    description: "One click. Add Uply to your workspace — no IT ticket, no vendor call.",
+    description: "One click. Add Uply to your workspace -  no IT ticket, no vendor call.",
     accent: "from-uply-green-muted/20 to-uply-green-muted/5",
   },
   {
@@ -23,7 +23,7 @@ const steps = [
     number: "03",
     title: "Team grows daily",
     description:
-      "One question per day, two minutes max. Soft skills that compound — inside the flow of work.",
+      "One question per day, two minutes max. Soft skills that compound -  inside the flow of work.",
     accent: "from-uply-green-muted/10 to-uply-green-muted/5",
   },
 ];
@@ -78,7 +78,7 @@ export function ProblemSolution() {
         ))}
       </div>
 
-      {/* Bottom line — social proof nudge + internal links */}
+      {/* Bottom line -  social proof nudge + internal links */}
       <p className="mt-10 text-center text-sm text-white/30">
         Most teams are fully running within their first day.{" "}
         <Link href="/tools/growth-calculator" className="text-white/50 underline decoration-white/20 underline-offset-2 transition-colors hover:text-white/70">

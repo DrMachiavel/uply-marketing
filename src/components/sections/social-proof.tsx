@@ -1,6 +1,6 @@
 import { Section } from "@/components/ui/section";
 
-// SVG wordmark logos — styled to approximate each brand's actual logo
+// SVG wordmark logos -  styled to approximate each brand's actual logo
 // In production, replace with actual brand SVG assets
 
 function EdusignLogo() {

@@ -7,7 +7,7 @@ import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
 import { getAllGuides } from "@/content/guides";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Guides — In-depth Resources for Team Development | Uply",
+  title: "Guides -  In-depth Resources for Team Development | Uply",
   description:
     "Comprehensive guides on soft skills training, measurement frameworks, and building stronger teams. In-depth resources backed by research.",
   path: "/guides",

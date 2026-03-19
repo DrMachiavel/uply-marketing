@@ -11,9 +11,9 @@ export const OG_CONTENT_TYPE = "image/png";
  * Generates a branded OG image with Uply styling.
  * Uses the Next.js ImageResponse API (Satori under the hood).
  *
- * @param title   — Main heading (keep under ~60 chars for best results)
- * @param subtitle — Optional subtitle or description
- * @param badge   — Optional small label above the title (e.g., "Blog", "Tool")
+ * @param title   -  Main heading (keep under ~60 chars for best results)
+ * @param subtitle -  Optional subtitle or description
+ * @param badge   -  Optional small label above the title (e.g., "Blog", "Tool")
  */
 export function generateOgImage({
   title,
@@ -38,7 +38,7 @@ export function generateOgImage({
           fontFamily: "Inter, sans-serif",
         }}
       >
-        {/* Top bar — decorative green accent */}
+        {/* Top bar -  decorative green accent */}
         <div
           style={{
             position: "absolute",
@@ -108,7 +108,7 @@ export function generateOgImage({
           </div>
         )}
 
-        {/* Bottom — Logo + domain */}
+        {/* Bottom -  Logo + domain */}
         <div
           style={{
             position: "absolute",

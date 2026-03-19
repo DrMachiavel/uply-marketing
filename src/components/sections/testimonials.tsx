@@ -33,7 +33,7 @@ const ROW_1: Testimonial[] = [
   },
   {
     quote:
-      "We tried workshops, coaching, e-learning — nothing stuck. Uply is the first thing our team actually engages with.",
+      "We tried workshops, coaching, e-learning -  nothing stuck. Uply is the first thing our team actually engages with.",
     name: "Alex R.",
     role: "People Ops at Figures",
     avatar: "https://i.pravatar.cc/80?img=51",
@@ -160,7 +160,7 @@ export function Testimonials() {
         <MarqueeRow testimonials={ROW_2} direction="right" duration="55s" />
       </div>
 
-      {/* Inline keyframes — scoped to this component */}
+      {/* Inline keyframes -  scoped to this component */}
       <style>{`
         @keyframes marquee-testimonials {
           0% { transform: translateX(0); }

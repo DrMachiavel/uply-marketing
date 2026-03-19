@@ -11,7 +11,7 @@ import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata({
   title: "Features",
   description:
-    "Uply delivers daily soft skills micro-lessons, weekly leaderboards, and team analytics — all inside Slack. No extra apps, just 2 minutes a day.",
+    "Uply delivers daily soft skills micro-lessons, weekly leaderboards, and team analytics -  all inside Slack. No extra apps, just 2 minutes a day.",
   path: "/features",
 });
 
@@ -167,7 +167,7 @@ export default function FeaturesPage() {
               Everything your team needs to build better soft skills
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-lg text-white/60">
-              Daily micro-lessons, weekly leaderboards, and team insights — all
+              Daily micro-lessons, weekly leaderboards, and team insights -  all
               delivered right inside Slack.
             </p>
           </div>
@@ -178,7 +178,7 @@ export default function FeaturesPage() {
       <FadeIn>
         <FeatureBlock
           title="Daily micro-lessons in Slack"
-          description="Every morning, your team gets a short scenario-based question right in Slack. No separate app, no extra logins — just two minutes of focused practice that fits naturally into the workday."
+          description="Every morning, your team gets a short scenario-based question right in Slack. No separate app, no extra logins -  just two minutes of focused practice that fits naturally into the workday."
           visual={<SlackMockup />}
           theme="light"
         />
@@ -187,7 +187,7 @@ export default function FeaturesPage() {
       <FadeIn>
         <FeatureBlock
           title="Weekly leaderboard"
-          description="Friendly competition keeps engagement high. Every Monday, the team sees who answered the most questions and who's climbing the ranks — turning skill building into a shared habit."
+          description="Friendly competition keeps engagement high. Every Monday, the team sees who answered the most questions and who's climbing the ranks -  turning skill building into a shared habit."
           visual={<LeaderboardMockup />}
           reversed
           theme="dark"
@@ -197,7 +197,7 @@ export default function FeaturesPage() {
       <FadeIn>
         <FeatureBlock
           title="Skill topics tailored to your team"
-          description="Choose from a growing library of topics — leadership, collaboration, feedback, and more. Pick what matters most and Uply delivers relevant questions automatically."
+          description="Choose from a growing library of topics -  leadership, collaboration, feedback, and more. Pick what matters most and Uply delivers relevant questions automatically."
           visual={<TopicsPreview />}
           theme="light"
         />
@@ -206,7 +206,7 @@ export default function FeaturesPage() {
       <FadeIn>
         <FeatureBlock
           title="Team insights and analytics"
-          description="Understand how your team is growing. Track participation rates, skill progress by topic, and engagement trends — all from a simple dashboard."
+          description="Understand how your team is growing. Track participation rates, skill progress by topic, and engagement trends -  all from a simple dashboard."
           visual={<DashboardMockup />}
           reversed
           theme="dark"
@@ -218,7 +218,7 @@ export default function FeaturesPage() {
         <TopicsGrid />
       </FadeIn>
 
-      {/* Internal links — tools + pricing */}
+      {/* Internal links -  tools + pricing */}
       <FadeIn>
         <Section theme="green-wash">
           <div className="mx-auto max-w-2xl text-center">
@@ -241,7 +241,7 @@ export default function FeaturesPage() {
               <a href="/pricing" className="font-medium text-uply-green-muted hover:underline">
                 See our pricing
               </a>{" "}
-              — it&apos;s free to get started.
+              -  it&apos;s free to get started.
             </p>
           </div>
         </Section>

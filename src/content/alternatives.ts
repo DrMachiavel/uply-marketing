@@ -18,7 +18,7 @@ export const alternatives: Alternative[] = [
   {
     slug: "donut-alternatives",
     competitor: "Donut",
-    title: "Best Donut Alternatives in 2026 — Team Development Tools",
+    title: "Best Donut Alternatives in 2026 -  Team Development Tools",
     description:
       "Looking for Donut alternatives? Compare the best Slack-based team development tools including Uply, Polly, Trivie, Disco, and Assembly.",
     heroHeadline: "Best Donut Alternatives in 2026",
@@ -28,7 +28,7 @@ export const alternatives: Alternative[] = [
       {
         name: "Uply",
         description:
-          "Slack-native soft skills training that delivers daily micro-lessons in under 2 minutes. Scenario-based questions, weekly leaderboards, and team analytics — all without leaving Slack. No content authoring needed.",
+          "Slack-native soft skills training that delivers daily micro-lessons in under 2 minutes. Scenario-based questions, weekly leaderboards, and team analytics -  all without leaving Slack. No content authoring needed.",
         bestFor:
           "Teams that want structured, measurable soft skills growth inside Slack.",
         pricing:
@@ -72,13 +72,13 @@ export const alternatives: Alternative[] = [
       {
         question: "Why look for Donut alternatives?",
         answer:
-          "Donut is excellent for social bonding and introductions, but many teams need more structured development — like skill building, training, or measurable growth. Alternatives like Uply offer daily learning, not just conversations.",
+          "Donut is excellent for social bonding and introductions, but many teams need more structured development -  like skill building, training, or measurable growth. Alternatives like Uply offer daily learning, not just conversations.",
       },
       {
         question:
           "Which Donut alternative is best for soft skills training?",
         answer:
-          "Uply is the best choice for soft skills training. It delivers daily scenario-based questions in Slack covering leadership, communication, and collaboration — with leaderboards to keep engagement high.",
+          "Uply is the best choice for soft skills training. It delivers daily scenario-based questions in Slack covering leadership, communication, and collaboration -  with leaderboards to keep engagement high.",
       },
       {
         question:
@@ -98,7 +98,7 @@ export const alternatives: Alternative[] = [
     slug: "lessonly-alternatives",
     competitor: "Lessonly",
     title:
-      "Best Lessonly Alternatives in 2026 — Team Training Platforms",
+      "Best Lessonly Alternatives in 2026 -  Team Training Platforms",
     description:
       "Looking for Lessonly alternatives? Compare the best team training tools including Uply, TalentLMS, EdApp, 360Learning, and Trainual.",
     heroHeadline: "Best Lessonly Alternatives in 2026",
@@ -108,7 +108,7 @@ export const alternatives: Alternative[] = [
       {
         name: "Uply",
         description:
-          "Slack-native soft skills training with daily micro-lessons, scenario-based questions, and weekly leaderboards. No course authoring, no separate platform — everything happens in Slack in under 2 minutes a day.",
+          "Slack-native soft skills training with daily micro-lessons, scenario-based questions, and weekly leaderboards. No course authoring, no separate platform -  everything happens in Slack in under 2 minutes a day.",
         bestFor:
           "Teams that want lightweight, daily soft skills practice without managing an LMS.",
         pricing:
@@ -159,7 +159,7 @@ export const alternatives: Alternative[] = [
         question:
           "Which Lessonly alternative is easiest to set up?",
         answer:
-          "Uply is the fastest to set up — install the Slack app, pick topics, and your team starts receiving daily lessons. No course creation, no content uploading, no user management portal.",
+          "Uply is the fastest to set up -  install the Slack app, pick topics, and your team starts receiving daily lessons. No course creation, no content uploading, no user management portal.",
       },
       {
         question:
@@ -179,7 +179,7 @@ export const alternatives: Alternative[] = [
     slug: "talentlms-alternatives",
     competitor: "TalentLMS",
     title:
-      "Best TalentLMS Alternatives in 2026 — Training Platforms",
+      "Best TalentLMS Alternatives in 2026 -  Training Platforms",
     description:
       "Looking for TalentLMS alternatives? Compare the best training platforms including Uply, EdApp, Lessonly, 7taps, and Docebo for your team.",
     heroHeadline: "Best TalentLMS Alternatives in 2026",
@@ -189,7 +189,7 @@ export const alternatives: Alternative[] = [
       {
         name: "Uply",
         description:
-          "Slack-native soft skills training with daily 2-minute micro-lessons. Scenario-based questions, weekly leaderboards, and team analytics — no LMS overhead, no content creation, no separate app.",
+          "Slack-native soft skills training with daily 2-minute micro-lessons. Scenario-based questions, weekly leaderboards, and team analytics -  no LMS overhead, no content creation, no separate app.",
         bestFor:
           "Teams that want focused soft skills development inside Slack without managing an LMS.",
         pricing:
@@ -215,7 +215,7 @@ export const alternatives: Alternative[] = [
       {
         name: "7taps",
         description:
-          "A fast microlearning creation tool that lets you build bite-sized courses and share them via links or QR codes. No learner accounts required — frictionless delivery.",
+          "A fast microlearning creation tool that lets you build bite-sized courses and share them via links or QR codes. No learner accounts required -  frictionless delivery.",
         bestFor:
           "L&D teams that need to quickly create and distribute microlearning content.",
         pricing:
@@ -234,13 +234,13 @@ export const alternatives: Alternative[] = [
       {
         question: "Why look for TalentLMS alternatives?",
         answer:
-          "TalentLMS is a solid LMS, but some teams find a full LMS is more than they need — especially for focused use cases like soft skills training. Lighter tools like Uply or 7taps can deliver faster results with less setup.",
+          "TalentLMS is a solid LMS, but some teams find a full LMS is more than they need -  especially for focused use cases like soft skills training. Lighter tools like Uply or 7taps can deliver faster results with less setup.",
       },
       {
         question:
           "Which TalentLMS alternative is best for small teams?",
         answer:
-          "Uply is ideal for small teams — it's free for up to 5 users, sets up in minutes, and requires no content creation. EdApp also offers a free plan with good features for smaller teams.",
+          "Uply is ideal for small teams -  it's free for up to 5 users, sets up in minutes, and requires no content creation. EdApp also offers a free plan with good features for smaller teams.",
       },
       {
         question:

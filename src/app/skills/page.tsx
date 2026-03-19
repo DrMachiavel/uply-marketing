@@ -14,7 +14,7 @@ import { getAllSkills } from "@/content/skills";
 export const metadata: Metadata = buildMetadata({
   title: "Soft Skills Training Topics",
   description:
-    "Browse the soft skills your team can develop with Uply's daily Slack training — leadership, communication, feedback, collaboration, and more.",
+    "Browse the soft skills your team can develop with Uply's daily Slack training -  leadership, communication, feedback, collaboration, and more.",
   path: "/skills",
 });
 

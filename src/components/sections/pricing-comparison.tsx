@@ -39,7 +39,7 @@ function CellContent({ value }: { value: CellValue }) {
   if (value === false) {
     return (
       <span className="text-uply-gray/40" aria-label="Not included">
-        —
+        - 
       </span>
     );
   }

@@ -30,7 +30,7 @@ export async function generateMetadata({
   }
 
   return buildMetadata({
-    title: `${name} — Help Center`,
+    title: `${name} -  Help Center`,
     description: `Learn about ${name.toLowerCase()} in Uply. Step-by-step guides and answers to common questions.`,
     path: `/help/${category}`,
   });

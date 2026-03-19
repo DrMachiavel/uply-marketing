@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SITE_CONFIG } from "./constants";
 
 // ---------------------------------------------------------------------------
-// Base URL — environment-aware, used everywhere instead of hardcoded domain
+// Base URL -  environment-aware, used everywhere instead of hardcoded domain
 // ---------------------------------------------------------------------------
 
 export function getBaseUrl(): string {
@@ -10,7 +10,7 @@ export function getBaseUrl(): string {
 }
 
 // ---------------------------------------------------------------------------
-// Metadata builder — merges SEO defaults so every page gets OG, Twitter,
+// Metadata builder -  merges SEO defaults so every page gets OG, Twitter,
 // canonical, and alternates (hreflang) automatically
 // ---------------------------------------------------------------------------
 
@@ -61,14 +61,14 @@ export function buildMetadata({
 }
 
 // ---------------------------------------------------------------------------
-// JSON-LD generators — structured data for rich results
+// JSON-LD generators -  structured data for rich results
 // ---------------------------------------------------------------------------
 
 export function jsonLd(data: Record<string, unknown>): Record<string, unknown> {
   return { "@context": "https://schema.org", ...data };
 }
 
-/** Organization — used in root layout */
+/** Organization -  used in root layout */
 export function organizationJsonLd() {
   const baseUrl = getBaseUrl();
   return jsonLd({
@@ -86,7 +86,7 @@ export function organizationJsonLd() {
   });
 }
 
-/** WebSite — used on homepage for sitelinks search box potential */
+/** WebSite -  used on homepage for sitelinks search box potential */
 export function webSiteJsonLd() {
   const baseUrl = getBaseUrl();
   return jsonLd({
@@ -98,7 +98,7 @@ export function webSiteJsonLd() {
   });
 }
 
-/** SoftwareApplication — product schema for the Slack app */
+/** SoftwareApplication -  product schema for the Slack app */
 export function softwareApplicationJsonLd() {
   return jsonLd({
     "@type": "SoftwareApplication",
@@ -110,12 +110,12 @@ export function softwareApplicationJsonLd() {
       "@type": "Offer",
       price: "0",
       priceCurrency: "USD",
-      description: "Free plan — up to 5 users, 1 topic",
+      description: "Free plan -  up to 5 users, 1 topic",
     },
   });
 }
 
-/** Article — for blog posts */
+/** Article -  for blog posts */
 export function articleJsonLd(post: {
   title: string;
   excerpt: string;
@@ -143,7 +143,7 @@ export function articleJsonLd(post: {
   });
 }
 
-/** BreadcrumbList — for any page with a breadcrumb trail */
+/** BreadcrumbList -  for any page with a breadcrumb trail */
 export function breadcrumbJsonLd(
   items: { name: string; path: string }[]
 ) {
@@ -159,7 +159,7 @@ export function breadcrumbJsonLd(
   });
 }
 
-/** FAQPage — for pages with FAQ accordions */
+/** FAQPage -  for pages with FAQ accordions */
 export function faqJsonLd(items: { question: string; answer: string }[]) {
   return jsonLd({
     "@type": "FAQPage",
@@ -174,11 +174,11 @@ export function faqJsonLd(items: { question: string; answer: string }[]) {
   });
 }
 
-/** Product with offers — for pricing page */
+/** Product with offers -  for pricing page */
 export function productJsonLd(offers: { name: string; price: string; description: string }[]) {
   return jsonLd({
     "@type": "Product",
-    name: `${SITE_CONFIG.name} — Soft Skills Training`,
+    name: `${SITE_CONFIG.name} -  Soft Skills Training`,
     description: SITE_CONFIG.description,
     brand: { "@type": "Organization", name: SITE_CONFIG.name },
     offers: offers.map((offer) => ({
@@ -192,7 +192,7 @@ export function productJsonLd(offers: { name: string; price: string; description
   });
 }
 
-/** HowTo — for step-by-step guide articles */
+/** HowTo -  for step-by-step guide articles */
 export function howToJsonLd(guide: {
   name: string;
   description: string;
@@ -212,7 +212,7 @@ export function howToJsonLd(guide: {
 }
 
 // ---------------------------------------------------------------------------
-// Helper — renders a JSON-LD script tag (use in page components)
+// Helper -  renders a JSON-LD script tag (use in page components)
 // ---------------------------------------------------------------------------
 
 export function JsonLdScript({ data }: { data: Record<string, unknown> }) {

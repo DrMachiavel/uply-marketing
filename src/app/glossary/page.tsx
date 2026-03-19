@@ -7,9 +7,9 @@ import { buildMetadata, breadcrumbJsonLd, JsonLdScript } from "@/lib/seo";
 import { getAllTerms } from "@/content/glossary";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Glossary — Workplace Learning Terms Explained | Uply",
+  title: "Glossary -  Workplace Learning Terms Explained | Uply",
   description:
-    "Clear, practical definitions of workplace learning and soft skills terms — microlearning, spaced repetition, psychological safety, growth mindset, and more.",
+    "Clear, practical definitions of workplace learning and soft skills terms -  microlearning, spaced repetition, psychological safety, growth mindset, and more.",
   path: "/glossary",
 });
 
@@ -35,7 +35,7 @@ export default function GlossaryPage() {
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-white/60">
               Clear, practical definitions of the concepts behind effective team
-              development — from microlearning to psychological safety.
+              development -  from microlearning to psychological safety.
             </p>
           </div>
         </FadeIn>
