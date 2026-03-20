@@ -188,6 +188,13 @@ export default function DataProcessingAgreementPage() {
                 display names, message interactions. Location: data processed
                 in accordance with Slack&apos;s data processing terms.
               </li>
+              <li>
+                <strong>Giphy, Inc. (Meta Platforms)</strong> &mdash; Delivery
+                of animated GIF content within Slack interactions. Data
+                processed: no personal data is shared with Giphy directly;
+                GIFs are fetched via API based on keywords. Location: United
+                States.
+              </li>
             </ul>
 
             {/* 6. Data Security Measures */}
