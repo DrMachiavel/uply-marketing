@@ -1,4 +1,4 @@
-export const SIGNUP_URL = process.env.NEXT_PUBLIC_SIGNUP_URL || "#";
+export const SIGNUP_URL = process.env.NEXT_PUBLIC_SIGNUP_URL || "https://app.uply.work/auth/slack/install";
 
 export const SITE_CONFIG = {
   name: "Uply",
