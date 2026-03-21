@@ -9,6 +9,7 @@ const footerColumns = [
       { href: "/features", label: "Features" },
       { href: "/skills", label: "Skills" },
       { href: "/pricing", label: "Pricing" },
+      { href: "/refer", label: "Refer a Team" },
       { href: "/blog", label: "Blog" },
     ],
   },

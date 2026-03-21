@@ -57,6 +57,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/glossary`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/guides`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
 
+    // Referral
+    { url: `${baseUrl}/refer`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
+
     // Tools -  high-value landing pages
     { url: `${baseUrl}/tools/growth-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/tools/turnover-calculator`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
