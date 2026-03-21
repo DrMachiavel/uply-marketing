@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { Section } from "@/components/ui/section";
 import { FadeIn } from "@/components/ui/fade-in";
 
-import { SIGNUP_URL } from "@/lib/constants";
+import { SlackInstallButton } from "@/components/ui/slack-install-button";
 
 function formatCurrency(value: number): string {
   return "$" + Math.round(value).toLocaleString("en-US");
@@ -247,12 +247,7 @@ export function GrowthCalculator() {
                         </span>
                       </div>
                     </div>
-                    <a
-                      href={SIGNUP_URL}
-                      className="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-uply-green px-6 py-3 text-sm font-semibold text-uply-dark transition-all duration-200 hover:brightness-110 hover:shadow-[0_0_24px_-4px_rgba(104,239,63,0.4)]"
-                    >
-                      Start recovering growth &mdash; Get Uply free
-                    </a>
+                    <SlackInstallButton location="growth-calculator" label="Start recovering growth - Get Uply free" className="mt-6 w-full justify-center" />
                   </div>
                 </div>
 

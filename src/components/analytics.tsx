@@ -39,6 +39,22 @@ function PlausibleAnalytics() {
   );
 }
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+export function trackEvent(action: string, params?: Record<string, string>) {
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", action, params);
+  }
+}
+
+export function trackInstallClick(location: string) {
+  trackEvent("slack_install_click", { location });
+}
+
 export function Analytics() {
   return (
     <>

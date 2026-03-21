@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/ui/logo";
 import { SIGNUP_URL } from "@/lib/constants";
+import { trackInstallClick } from "@/components/analytics";
 import { MobileNav } from "./mobile-nav";
 
 const navLinks = [
@@ -31,7 +32,7 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button href={SIGNUP_URL} size="sm">
+          <Button href={SIGNUP_URL} size="sm" onClick={() => trackInstallClick("navbar")}>
             Get started free
           </Button>
         </div>

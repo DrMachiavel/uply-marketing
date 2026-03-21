@@ -9,6 +9,7 @@ interface ButtonProps {
   size?: ButtonSize;
   children: React.ReactNode;
   className?: string;
+  onClick?: () => void;
 }
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -32,10 +33,12 @@ export function Button({
   size = "md",
   children,
   className = "",
+  onClick,
 }: ButtonProps) {
   return (
     <Link
       href={href}
+      onClick={onClick}
       className={`inline-flex items-center justify-center rounded-lg transition-all duration-200 ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
     >
       {children}

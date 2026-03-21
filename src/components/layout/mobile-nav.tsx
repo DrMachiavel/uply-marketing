@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { SIGNUP_URL } from "@/lib/constants";
+import { trackInstallClick } from "@/components/analytics";
 
 interface MobileNavProps {
   open: boolean;
@@ -24,7 +25,7 @@ export function MobileNav({ open, onClose, links }: MobileNavProps) {
             {link.label}
           </Link>
         ))}
-        <Button href={SIGNUP_URL} size="lg" className="mt-2 w-full text-center">
+        <Button href={SIGNUP_URL} size="lg" className="mt-2 w-full text-center" onClick={() => trackInstallClick("mobile-nav")}>
           Get started free
         </Button>
       </div>

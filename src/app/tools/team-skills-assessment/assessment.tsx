@@ -6,7 +6,7 @@ import { Section } from "@/components/ui/section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { Badge } from "@/components/ui/badge";
 
-import { SIGNUP_URL } from "@/lib/constants";
+import { SlackInstallButton } from "@/components/ui/slack-install-button";
 
 // ---------------------------------------------------------------------------
 // Data
@@ -830,12 +830,7 @@ export function TeamSkillsAssessment() {
         {/* CTA */}
         <FadeIn>
           <div className="mt-8 text-center">
-            <a
-              href={SIGNUP_URL}
-              className="inline-flex items-center justify-center rounded-lg bg-uply-green px-8 py-3.5 text-sm font-semibold text-uply-dark transition-all duration-200 hover:brightness-110 hover:shadow-[0_0_24px_-4px_rgba(104,239,63,0.4)]"
-            >
-              Start building these skills with Uply
-            </a>
+            <SlackInstallButton location="skills-assessment" label="Start building these skills with Uply" />
             <button
               onClick={handleRetake}
               className="mt-4 block w-full text-sm text-white/40 transition-colors hover:text-white/60"
